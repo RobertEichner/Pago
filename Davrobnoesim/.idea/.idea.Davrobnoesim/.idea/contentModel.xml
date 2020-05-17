@@ -8,6 +8,9 @@
       <e p="Assets" t="Include">
         <e p="_Game" t="Include">
           <e p="Scripts" t="Include">
+            <e p="DayNightCycle" t="Include">
+              <e p="Clock.cs" t="Include" />
+            </e>
             <e p="MovementScripts" t="Include">
               <e p="PlayerMovementControlls.cs" t="Include" />
             </e>

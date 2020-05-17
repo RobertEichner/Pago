@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + (direction * (Time.deltaTime * speed)));
+        rb.MovePosition(rb.position + (direction * (Time.fixedDeltaTime * speed)));
     }
 
     public void OnMovement(InputValue value)
