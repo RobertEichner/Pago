@@ -31,7 +31,7 @@ public class Clock : MonoBehaviour
                 
             }
             instruction.text = toString(gameMinutes);
-            Debug.Log(toString(gameMinutes));
+            //Debug.Log(toString(gameMinutes));
             yield return new WaitForSeconds(1f);
         }
     }

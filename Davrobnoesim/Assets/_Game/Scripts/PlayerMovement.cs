@@ -7,10 +7,18 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
+    public Animator animator;
 
     private Vector2 direction;
 
     [SerializeField] private float speed = 8f;
+
+    void Update()
+    {
+        animator.SetFloat("Horizontal", direction.x);
+        animator.SetFloat("Vertical", direction.y);
+        animator.SetFloat("Speed", direction.sqrMagnitude);
+    }
 
     private void Awake()
     {
