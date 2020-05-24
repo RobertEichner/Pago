@@ -14,7 +14,7 @@ public class PlayerGold : MonoBehaviour, IChangeGold
    public int CurrentGold
    {
       get => currentGold;
-      set
+      private set
       {
          currentGold = Mathf.Clamp(value, 0, maxGold);
          OnGoldChanged?.Invoke(this, new GoldChangedArgs

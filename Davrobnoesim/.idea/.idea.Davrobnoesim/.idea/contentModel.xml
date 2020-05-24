@@ -18,7 +18,16 @@
               <e p="UIGold.cs" t="Include" />
             </e>
             <e p="InvLogic" t="Include">
+              <e p="IInteractable.cs" t="Include" />
+              <e p="ItemPlan.cs" t="Include" />
+            </e>
+            <e p="Item" t="Include">
+              <e p="FollowMousePosition.cs" t="Include" />
+              <e p="Inventory.cs" t="Include" />
               <e p="Item.cs" t="Include" />
+              <e p="ItemDatabase.cs" t="Include" />
+              <e p="UIInventory.cs" t="Include" />
+              <e p="UIItem.cs" t="Include" />
             </e>
             <e p="PlayerMovementLogic" t="Include">
               <e p="PlayerMovement.cs" t="Include" />

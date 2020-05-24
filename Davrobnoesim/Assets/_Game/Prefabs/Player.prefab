@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6893041847189879464}
   - component: {fileID: 6893041847189879382}
   - component: {fileID: 4194233394598873871}
+  - component: {fileID: 209245023}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -181,3 +182,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentGold: 0
   maxGold: 1000
+--- !u!114 &209245023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6893041847189879468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cf6eb7657bb3a647b8bcdf578daef08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemDatabase: {fileID: 0}
+  uIInventory: {fileID: 0}

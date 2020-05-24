@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : ScriptableObject
+[CreateAssetMenu(menuName = "Create Item")]
+public class ItemPlan : ScriptableObject
 {
     [SerializeField] private string titel = "default";
     [SerializeField] private Sprite icon = null;
-    [Min(1)] private int maxStack = 1;
+    [Min(1)] [SerializeField] private int maxStack = 1;
 
     public string Titel => titel;
     public Sprite Icon => icon;
