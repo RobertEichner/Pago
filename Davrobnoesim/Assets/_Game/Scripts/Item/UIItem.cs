@@ -40,7 +40,7 @@ public class UIItem : MonoBehaviour, IPointerDownHandler
         {
             if (selectedItem.Item != null)
             {
-                Item clone = new Item(selectedItem.Item);
+                Item clone = selectedItem.item.CreateClone();
                 selectedItem.UpdateItem(this.item);
                 UpdateItem(clone);
             }

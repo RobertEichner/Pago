@@ -8,7 +8,7 @@ public class UIInventory : MonoBehaviour
     private readonly List<UIItem> uIItems = new List<UIItem>();
     [SerializeField] private GameObject slotPrefab;
     [SerializeField] private Transform slotPanel;
-    [SerializeField] private int numberOfSlots = 16;
+    private int numberOfSlots = 0;
 
     private void Awake()
     {
@@ -32,5 +32,10 @@ public class UIInventory : MonoBehaviour
     public void RemoveItem(Item item)
     {
         UpdateSlot(uIItems.FindIndex(i => i.Item == item), null);
+    }
+
+    public void SetSlots(int i)
+    {
+        numberOfSlots = i;
     }
 }

@@ -6,37 +6,28 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     private List<Item> characterItems = new List<Item>();
-    [SerializeField] private ItemDatabase itemDatabase;
     [SerializeField] private UIInventory uIInventory;
+    [SerializeField] private int maxItemSlots = 16;
 
-    private void Start()
+    private void Awake()
     {
-        GiveItem(1);
-        GiveItem(2);
+        uIInventory.SetSlots(maxItemSlots);
     }
 
-    public void GiveItem(int id)
+    public void GiveItem(Item item)
     {
-        Item itemAdd = itemDatabase.GetItem(id);
-        characterItems.Add(itemAdd);
-        uIInventory.AddItem(itemAdd);
+        characterItems.Add(item);
+        uIInventory.AddItem(item);
     }
     
-    public void GiveItem(string name)
+    public Item CheckForItem(Item item)
     {
-        Item itemAdd = itemDatabase.GetItem(name);
-        characterItems.Add(itemAdd);
-        uIInventory.AddItem(itemAdd);
+        return characterItems.Find(i => i == item);
     }
     
-    public Item CheckForItem(int id)
+    public void RemoveItem(Item item)
     {
-        return characterItems.Find(item => item.Id == id);
-    }
-    
-    public void RemoveItem(int id)
-    {
-        Item itemToRemove = CheckForItem(id);
+        Item itemToRemove = CheckForItem(item);
 
         if (itemToRemove != null)
         {

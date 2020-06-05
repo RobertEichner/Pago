@@ -2,39 +2,48 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item
-{
-    private int id;
-    private string title;
-    private string description;
-    private Sprite icon;
-    
-    public int Id => id;
-    public string Title => title;
-    public string Description => description;
-    public Sprite Icon => icon;
 
-    public Item(int id, string title, string description)
+[CreateAssetMenu(menuName = "CreateItem")]
+public class Item : ScriptableObject
+{
+    [SerializeField] private int id;
+    [SerializeField] private string title;
+    [SerializeField] private Sprite icon;
+
+    [SerializeField] private ItemAbility ability;
+
+    public int Id
     {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.icon = Resources.Load<Sprite>("Sprite/item" + id.ToString());
+        get => id;
+        set => id = value;
     }
-    
-    public Item(int id, string title, string description, Sprite icon)
+
+    public string Title
     {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.icon = icon;
+        get => title;
+        set => title = value;
     }
-    
-    public Item(Item item)
+
+    public Sprite Icon
     {
-        this.id = item.Id;
-        this.title = item.Title;
-        this.description = item.Description;
-        this.icon = item.Icon;
+        get => icon;
+        set => icon = value;
+    }
+
+    public ItemAbility Ability
+    {
+        get => ability;
+        set => ability = value;
+    }
+
+    public Item CreateClone()
+    {
+        Item cloneItem = ScriptableObject.CreateInstance<Item>();
+        cloneItem.id = this.id;
+        cloneItem.title = this.title;
+        cloneItem.icon = this.icon;
+        cloneItem.ability = this.ability;
+
+        return cloneItem;
     }
 }
