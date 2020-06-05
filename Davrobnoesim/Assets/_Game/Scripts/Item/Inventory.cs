@@ -9,9 +9,13 @@ public class Inventory : MonoBehaviour
     [SerializeField] private UIInventory uIInventory;
     [SerializeField] private int maxItemSlots = 16;
 
+    private GameObject owner;
+    
     private void Awake()
     {
+        owner = gameObject;
         uIInventory.SetSlots(maxItemSlots);
+        uIInventory.SetInventory(this);
     }
 
     public void GiveItem(Item item)
@@ -34,5 +38,12 @@ public class Inventory : MonoBehaviour
             characterItems.Remove(itemToRemove);
             uIInventory.RemoveItem(itemToRemove);
         }
+    }
+    
+    public void UseItem(Item item)
+    {
+        Item itemToUse = CheckForItem(item);
+        itemToUse.Ability.UseItem(owner);
+        RemoveItem(itemToUse);
     }
 }

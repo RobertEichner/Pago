@@ -10,6 +10,10 @@ public class UIItem : MonoBehaviour, IPointerDownHandler
     private Item item;
     private Image spriteImage;
     private UIItem selectedItem;
+    
+    //TODO
+    private Inventory inv;
+    
 
     public Item Item => item;
 
@@ -18,6 +22,7 @@ public class UIItem : MonoBehaviour, IPointerDownHandler
         spriteImage = GetComponent<Image>();
         UpdateItem(null);
         selectedItem = GameObject.Find("SelectedItem").GetComponent<UIItem>();
+
     }
 
     public void UpdateItem(Item item)
@@ -36,24 +41,39 @@ public class UIItem : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (this.item != null)
+        if (eventData.button == PointerEventData.InputButton.Left)
         {
-            if (selectedItem.Item != null)
+            if (this.item != null)
             {
-                Item clone = selectedItem.item.CreateClone();
-                selectedItem.UpdateItem(this.item);
-                UpdateItem(clone);
+                if (selectedItem.Item != null)
+                {
+                    Item clone = selectedItem.item.CreateClone();
+                    selectedItem.UpdateItem(this.item);
+                    UpdateItem(clone);
+                }
+                else
+                {
+                    selectedItem.UpdateItem(this.item);
+                    UpdateItem(null);
+                }
             }
-            else
+            else if (selectedItem.Item != null)
             {
-                selectedItem.UpdateItem(this.item);
-                UpdateItem(null);
+                UpdateItem(selectedItem.Item);
+                selectedItem.UpdateItem(null);
             }
         }
-        else if (selectedItem.Item != null)
+        else
         {
-            UpdateItem(selectedItem.Item);
-            selectedItem.UpdateItem(null);
+            if (this.item != null)
+            {
+               inv.UseItem(this.item);
+            }
         }
+    }
+
+    public void SetInventory(Inventory inv)
+    {
+        this.inv = inv;
     }
 }

@@ -4,5 +4,5 @@ using UnityEngine;
 
 public abstract class ItemAbility : ScriptableObject
 {
-    public abstract void UseItem(GameObject o);
+    public abstract void UseItem(GameObject target);
 }
