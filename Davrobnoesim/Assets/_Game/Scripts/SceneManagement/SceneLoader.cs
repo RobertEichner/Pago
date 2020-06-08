@@ -5,9 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public void MachDas()
+    public void ButtonWeiter()
     {
-        Debug.Log("Halloooo");
+        Debug.Log("Button, der das Spiel weiterlaufen lässt");
         SceneManager.LoadScene(0);
+
+        
+    }
+    public void ButtonOptionen() {
+        Debug.Log("Button, der die Optionen öffnet");
+        SceneManager.LoadScene(1);
+    
+    }
+
+    public void ButtonClose() {
+        Debug.Log("Button, der das Spiel speichert und beendet");
+        //Save und close implementieren
+       
     }
 }
