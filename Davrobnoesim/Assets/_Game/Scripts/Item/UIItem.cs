@@ -10,10 +10,8 @@ public class UIItem : MonoBehaviour, IPointerDownHandler
     private Item item;
     private Image spriteImage;
     private UIItem selectedItem;
-    
-    //TODO
-    private Inventory inv;
-    
+
+    private Action<Item> ItemUse;
 
     public Item Item => item;
 
@@ -67,13 +65,14 @@ public class UIItem : MonoBehaviour, IPointerDownHandler
         {
             if (this.item != null)
             {
-               inv.UseItem(this.item);
+                ItemUse(this.item);
             }
         }
     }
 
-    public void SetInventory(Inventory inv)
+    public void SetUseItemAction(Action<Item> itemUse)
     {
-        this.inv = inv;
+        ItemUse = itemUse;
     }
+
 }

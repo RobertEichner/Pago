@@ -10,8 +10,7 @@ public class UIInventory : MonoBehaviour
     [SerializeField] private Transform slotPanel;
     private int numberOfSlots = 0;
     
-    //TODO
-    private Inventory inv;
+    public List<UIItem> UIItems => uIItems;
 
 
     private void Awake()
@@ -20,7 +19,6 @@ public class UIInventory : MonoBehaviour
         {
             GameObject instance = Instantiate(slotPrefab, Vector3.zero, Quaternion.identity, slotPanel);
             uIItems.Add(instance.GetComponentInChildren<UIItem>());
-            uIItems[i].SetInventory(inv);
         }
     }
 
@@ -44,9 +42,4 @@ public class UIInventory : MonoBehaviour
         numberOfSlots = i;
     }
 
-    public void SetInventory(Inventory inv)
-    {
-        this.inv = inv;
-    }
-    
 }

@@ -15,7 +15,14 @@ public class Inventory : MonoBehaviour
     {
         owner = gameObject;
         uIInventory.SetSlots(maxItemSlots);
-        uIInventory.SetInventory(this);
+    }
+
+    private void Start()
+    {
+        foreach (var item in uIInventory.UIItems)
+        {
+            item.SetUseItemAction(UseItem);
+        }
     }
 
     public void GiveItem(Item item)
