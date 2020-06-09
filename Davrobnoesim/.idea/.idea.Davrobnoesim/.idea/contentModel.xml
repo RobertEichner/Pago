@@ -34,6 +34,9 @@
               <e p="PlayerMovement.cs" t="Include" />
               <e p="PlayerMovementControlls.cs" t="Include" />
             </e>
+            <e p="SceneManagement" t="Include">
+              <e p="SceneLoader.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">
