@@ -10,7 +10,7 @@ public class UIItem : MonoBehaviour, IPointerDownHandler
     private Item item;
     private Image spriteImage;
     private UIItem selectedItem;
-
+    
     private Action<Item> ItemUse;
 
     public Item Item => item;

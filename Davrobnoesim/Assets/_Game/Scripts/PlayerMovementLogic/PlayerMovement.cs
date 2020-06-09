@@ -11,8 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 direction;
 
     [SerializeField] private float speed = 8f;
-
-    [SerializeField] private LayerMask lm;
+    
 
     private void Awake()
     {

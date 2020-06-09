@@ -168,6 +168,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  lm:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &4194233394598873871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentGold: 0
-  maxGold: 1000
+  maxGold: 10000
 --- !u!114 &209245023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,5 +197,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cf6eb7657bb3a647b8bcdf578daef08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemDatabase: {fileID: 0}
   uIInventory: {fileID: 0}
+  maxItemSlots: 16
