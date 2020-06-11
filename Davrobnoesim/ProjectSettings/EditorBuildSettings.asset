@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Game/Scenes/LevelTestScene.unity
+    guid: 3a2074d9473c0f7499a929b0203428c6
+  - enabled: 1
+    path: Assets/_Game/Scenes/PausenScreen.unity
+    guid: 9d846b098f567d140bd53c3c1e54bc60
   m_configObjects: {}
