@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6893041847189879464}
   - component: {fileID: 6893041847189879382}
   - component: {fileID: 4194233394598873871}
+  - component: {fileID: 167546878579187679}
   - component: {fileID: 209245023}
   m_Layer: 0
   m_Name: Player
@@ -168,9 +169,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  lm:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &4194233394598873871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +183,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentGold: 0
   maxGold: 10000
+--- !u!114 &167546878579187679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6893041847189879468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e25284cdeb1e942927374d95e04de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 1000
 --- !u!114 &209245023
 MonoBehaviour:
   m_ObjectHideFlags: 0

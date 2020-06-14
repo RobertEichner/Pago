@@ -12,10 +12,13 @@
               <e p="Clock.cs" t="Include" />
             </e>
             <e p="GoldLogic" t="Include">
-              <e p="GoldTester.cs" t="Include" />
               <e p="IChangeGold.cs" t="Include" />
               <e p="PlayerGold.cs" t="Include" />
               <e p="UIGold.cs" t="Include" />
+            </e>
+            <e p="HealthLogic" t="Include">
+              <e p="PlayerHealth.cs" t="Include" />
+              <e p="UIHealth.cs" t="Include" />
             </e>
             <e p="Item" t="Include">
               <e p="FollowMousePosition.cs" t="Include" />
