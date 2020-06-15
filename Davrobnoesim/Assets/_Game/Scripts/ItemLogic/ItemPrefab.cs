@@ -8,28 +8,26 @@ using UnityEngine.UIElements;
 public class ItemPrefab : MonoBehaviour
 {
 
-    private SpriteRenderer renderer;
-    private BoxCollider2D col;
+    private SpriteRenderer sRenderer;
 
-    [SerializeField] private Item item;
+    [SerializeField] private Item item = null;
     // Start is called before the first frame update
     void Awake()
     {
-        renderer = GetComponent<SpriteRenderer>();
-        col = GetComponent<BoxCollider2D>();
+        sRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Start()
     {
-        renderer.sprite = item.Icon;
+        sRenderer.sprite = item.Icon;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.TryGetComponent<Inventory>(out Inventory inv))
         {
-            inv.GiveItem(item);
-            Destroy(gameObject);
+            if(inv.GiveItem(item))
+                Destroy(gameObject);
         }
     }
 }
