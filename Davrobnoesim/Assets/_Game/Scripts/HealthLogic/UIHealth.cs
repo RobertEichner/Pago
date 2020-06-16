@@ -1,16 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIHealth : MonoBehaviour
 {
-    private TextMeshProUGUI text;
+    private Slider slider;
     [SerializeField] private PlayerHealth playerHealth = null;
 
     private void Awake()
     {
-        TryGetComponent<TextMeshProUGUI>(out text);
+        TryGetComponent<Slider>(out slider);
     }
     
     private void OnEnable()
@@ -31,6 +33,7 @@ public class UIHealth : MonoBehaviour
 
     private void UpdateGoldUI(int currentHealth, int maxHealth)
     {
-        text.text = $"{Mathf.Ceil(currentHealth)}/{Mathf.Ceil(maxHealth)}";
+        slider.maxValue = maxHealth;
+        slider.value = currentHealth;
     }
 }

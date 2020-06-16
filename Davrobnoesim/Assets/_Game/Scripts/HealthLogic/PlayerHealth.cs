@@ -42,4 +42,12 @@ public class PlayerHealth : MonoBehaviour
     {
         CurrentHealth += amount;
     }
+    
+    private void Update()
+    {
+        if (Input.GetButtonDown("Jump"))
+        {
+            ChangeHealth(-10);
+        }
+    }
 }
