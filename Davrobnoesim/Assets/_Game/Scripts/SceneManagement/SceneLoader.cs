@@ -21,6 +21,19 @@ public class SceneLoader : MonoBehaviour
     public void ButtonClose() {
         Debug.Log("Button, der das Spiel speichert und beendet");
         //Save und close implementieren
-       
+    }
+
+    public void ButtonLoadGame() {
+        SceneManager.LoadScene(3);
+    }
+
+    public void ButtonNewGame()
+    {
+        SceneManager.LoadScene(4);
+    }
+
+    public void ButtonExit()
+    {
+        //spiel beenden implementieren
     }
 }
