@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/_Game/Scripts/PlayerMovementLogic/PlayerMovementControlls.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/_Game/Scripts/PlayerLogic/PlayerMovementControlls.inputactions'
 
 using System;
 using System.Collections;
@@ -30,6 +30,22 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
                     ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""f0a0144c-d2b7-40f8-91f9-1fae86ce025d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""HotbarAttackLeft"",
+                    ""type"": ""Button"",
+                    ""id"": ""d93dee37-59b5-433d-98f0-d5a074ba3d05"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""HotbarAttackRight"",
+                    ""type"": ""Button"",
+                    ""id"": ""4706f840-fb3c-427c-b97a-b9e1a417cd90"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -94,11 +110,33 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""9751c8ca-c17d-4125-afcc-ebdcc43eb788"",
-                    ""path"": ""<Mouse>/rightButton"",
+                    ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""29148a1e-56b7-474c-a1a7-d9314358f2d7"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HotbarAttackLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4ccd30b5-a696-4366-a73f-76f8c6e801c7"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HotbarAttackRight"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -111,6 +149,8 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
         m_PlayerMovement = asset.FindActionMap("PlayerMovement", throwIfNotFound: true);
         m_PlayerMovement_Movement = m_PlayerMovement.FindAction("Movement", throwIfNotFound: true);
         m_PlayerMovement_Interact = m_PlayerMovement.FindAction("Interact", throwIfNotFound: true);
+        m_PlayerMovement_HotbarAttackLeft = m_PlayerMovement.FindAction("HotbarAttackLeft", throwIfNotFound: true);
+        m_PlayerMovement_HotbarAttackRight = m_PlayerMovement.FindAction("HotbarAttackRight", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -162,12 +202,16 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
     private IPlayerMovementActions m_PlayerMovementActionsCallbackInterface;
     private readonly InputAction m_PlayerMovement_Movement;
     private readonly InputAction m_PlayerMovement_Interact;
+    private readonly InputAction m_PlayerMovement_HotbarAttackLeft;
+    private readonly InputAction m_PlayerMovement_HotbarAttackRight;
     public struct PlayerMovementActions
     {
         private @PlayerMovementControlls m_Wrapper;
         public PlayerMovementActions(@PlayerMovementControlls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_PlayerMovement_Movement;
         public InputAction @Interact => m_Wrapper.m_PlayerMovement_Interact;
+        public InputAction @HotbarAttackLeft => m_Wrapper.m_PlayerMovement_HotbarAttackLeft;
+        public InputAction @HotbarAttackRight => m_Wrapper.m_PlayerMovement_HotbarAttackRight;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMovement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -183,6 +227,12 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
                 @Interact.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnInteract;
+                @HotbarAttackLeft.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnHotbarAttackLeft;
+                @HotbarAttackLeft.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnHotbarAttackLeft;
+                @HotbarAttackLeft.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnHotbarAttackLeft;
+                @HotbarAttackRight.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnHotbarAttackRight;
+                @HotbarAttackRight.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnHotbarAttackRight;
+                @HotbarAttackRight.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnHotbarAttackRight;
             }
             m_Wrapper.m_PlayerMovementActionsCallbackInterface = instance;
             if (instance != null)
@@ -193,6 +243,12 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
+                @HotbarAttackLeft.started += instance.OnHotbarAttackLeft;
+                @HotbarAttackLeft.performed += instance.OnHotbarAttackLeft;
+                @HotbarAttackLeft.canceled += instance.OnHotbarAttackLeft;
+                @HotbarAttackRight.started += instance.OnHotbarAttackRight;
+                @HotbarAttackRight.performed += instance.OnHotbarAttackRight;
+                @HotbarAttackRight.canceled += instance.OnHotbarAttackRight;
             }
         }
     }
@@ -201,5 +257,7 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnHotbarAttackLeft(InputAction.CallbackContext context);
+        void OnHotbarAttackRight(InputAction.CallbackContext context);
     }
 }

@@ -88,7 +88,6 @@ public class Inventory : MonoBehaviour
         Item item1 = GetItemFromIndex(fromIndex); 
         Item item2 = toInventory.GetItemFromIndex(toIndex);
         
-        Debug.Log(item1 + "---" + item2);
         RemoveItem(fromIndex);
         toInventory.RemoveItem(toIndex);
 

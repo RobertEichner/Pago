@@ -20,6 +20,22 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "HotbarAttackLeft",
+                    "type": "Button",
+                    "id": "d93dee37-59b5-433d-98f0-d5a074ba3d05",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "HotbarAttackRight",
+                    "type": "Button",
+                    "id": "4706f840-fb3c-427c-b97a-b9e1a417cd90",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -81,11 +97,33 @@
                 {
                     "name": "",
                     "id": "9751c8ca-c17d-4125-afcc-ebdcc43eb788",
-                    "path": "<Mouse>/rightButton",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "29148a1e-56b7-474c-a1a7-d9314358f2d7",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HotbarAttackLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4ccd30b5-a696-4366-a73f-76f8c6e801c7",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HotbarAttackRight",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

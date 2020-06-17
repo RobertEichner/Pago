@@ -28,6 +28,9 @@
               <e p="Inventory.cs" t="Include" />
               <e p="UIInventory.cs" t="Include" />
             </e>
+            <e p="ItemEnviromentLogic" t="Include">
+              <e p="Kiste.cs" t="Include" />
+            </e>
             <e p="ItemLogic" t="Include">
               <e p="Item.cs" t="Include" />
               <e p="ItemAbilities" t="Include">
@@ -37,7 +40,8 @@
               <e p="ItemPrefab.cs" t="Include" />
               <e p="UIItem.cs" t="Include" />
             </e>
-            <e p="PlayerMovementLogic" t="Include">
+            <e p="PlayerLogic" t="Include">
+              <e p="PlayerActions.cs" t="Include" />
               <e p="PlayerMovement.cs" t="Include" />
               <e p="PlayerMovementControlls.cs" t="Include" />
             </e>
