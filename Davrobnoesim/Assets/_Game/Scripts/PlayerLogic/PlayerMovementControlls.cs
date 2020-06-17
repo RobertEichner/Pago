@@ -49,6 +49,14 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""InventarOpen"",
+                    ""type"": ""Button"",
+                    ""id"": ""8079d7c8-6aa1-4886-b57a-fec8ea9703af"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -139,6 +147,17 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
                     ""action"": ""HotbarAttackRight"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f403b7c8-62ea-40b4-9d76-30dd1f30bd7c"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""InventarOpen"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -151,6 +170,7 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
         m_PlayerMovement_Interact = m_PlayerMovement.FindAction("Interact", throwIfNotFound: true);
         m_PlayerMovement_HotbarAttackLeft = m_PlayerMovement.FindAction("HotbarAttackLeft", throwIfNotFound: true);
         m_PlayerMovement_HotbarAttackRight = m_PlayerMovement.FindAction("HotbarAttackRight", throwIfNotFound: true);
+        m_PlayerMovement_InventarOpen = m_PlayerMovement.FindAction("InventarOpen", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -204,6 +224,7 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerMovement_Interact;
     private readonly InputAction m_PlayerMovement_HotbarAttackLeft;
     private readonly InputAction m_PlayerMovement_HotbarAttackRight;
+    private readonly InputAction m_PlayerMovement_InventarOpen;
     public struct PlayerMovementActions
     {
         private @PlayerMovementControlls m_Wrapper;
@@ -212,6 +233,7 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
         public InputAction @Interact => m_Wrapper.m_PlayerMovement_Interact;
         public InputAction @HotbarAttackLeft => m_Wrapper.m_PlayerMovement_HotbarAttackLeft;
         public InputAction @HotbarAttackRight => m_Wrapper.m_PlayerMovement_HotbarAttackRight;
+        public InputAction @InventarOpen => m_Wrapper.m_PlayerMovement_InventarOpen;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMovement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -233,6 +255,9 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
                 @HotbarAttackRight.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnHotbarAttackRight;
                 @HotbarAttackRight.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnHotbarAttackRight;
                 @HotbarAttackRight.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnHotbarAttackRight;
+                @InventarOpen.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnInventarOpen;
+                @InventarOpen.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnInventarOpen;
+                @InventarOpen.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnInventarOpen;
             }
             m_Wrapper.m_PlayerMovementActionsCallbackInterface = instance;
             if (instance != null)
@@ -249,6 +274,9 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
                 @HotbarAttackRight.started += instance.OnHotbarAttackRight;
                 @HotbarAttackRight.performed += instance.OnHotbarAttackRight;
                 @HotbarAttackRight.canceled += instance.OnHotbarAttackRight;
+                @InventarOpen.started += instance.OnInventarOpen;
+                @InventarOpen.performed += instance.OnInventarOpen;
+                @InventarOpen.canceled += instance.OnInventarOpen;
             }
         }
     }
@@ -259,5 +287,6 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
         void OnInteract(InputAction.CallbackContext context);
         void OnHotbarAttackLeft(InputAction.CallbackContext context);
         void OnHotbarAttackRight(InputAction.CallbackContext context);
+        void OnInventarOpen(InputAction.CallbackContext context);
     }
 }

@@ -109,4 +109,14 @@ public class Inventory : MonoBehaviour
         }
         
     }
+
+    public void UpdateAllSlots()
+    {
+        for (int i = 0; i < maxItemSlots; i++)
+        {
+            if(!itemsInInv.ContainsKey(i) || itemsInInv[i] == null)
+                break;
+            ItemChange(itemsInInv[i], i);
+        }
+    }
 }

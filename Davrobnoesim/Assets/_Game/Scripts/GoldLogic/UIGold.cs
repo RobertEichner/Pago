@@ -33,6 +33,6 @@ public class UIGold : MonoBehaviour
 
     private void UpdateGoldUI(int currentGold, int maxGold)
     {
-        text.text = $"{Mathf.Ceil(currentGold)}/{Mathf.Ceil(maxGold)}";
+        text.text = currentGold.ToString();
     }
 }
