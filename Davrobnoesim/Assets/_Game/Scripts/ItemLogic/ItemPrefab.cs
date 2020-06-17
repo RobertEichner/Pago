@@ -11,6 +11,8 @@ public class ItemPrefab : MonoBehaviour
     private SpriteRenderer sRenderer;
 
     [SerializeField] private Item item = null;
+    [SerializeField] private ItemState triggerToDo;
+    
     // Start is called before the first frame update
     void Awake()
     {
@@ -24,10 +26,39 @@ public class ItemPrefab : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        switch (triggerToDo)
+        {
+            case ItemState.ToInventory:
+                ItemToInventory(other);
+                break;
+            case ItemState.ToUse:
+                ItemToUse(other);
+                break;
+        }
+    }
+
+    private void ItemToInventory(Collider2D other)
+    {
         if (other.TryGetComponent<Inventory>(out Inventory inv))
         {
-            if(inv.GiveItem(item))
+            if (inv.GiveItem(item))
                 Destroy(gameObject);
         }
     }
+    
+    private void ItemToUse(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            item.Ability.UseItem(other.gameObject);
+            Destroy(gameObject);
+        }
+    }
+
+    private enum ItemState
+    {
+        ToInventory,
+        ToUse,
+    }
+    
 }
