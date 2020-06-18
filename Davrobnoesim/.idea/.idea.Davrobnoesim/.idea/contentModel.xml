@@ -12,38 +12,45 @@
               <e p="Clock.cs" t="Include" />
             </e>
             <e p="FollowMousePosition.cs" t="Include" />
-            <e p="GoldLogic" t="Include">
-              <e p="PlayerGold.cs" t="Include" />
-              <e p="UIGold.cs" t="Include" />
-            </e>
-            <e p="HealthLogic" t="Include">
-              <e p="PlayerHealth.cs" t="Include" />
-              <e p="UIHealth.cs" t="Include" />
-            </e>
             <e p="Interfaces" t="Include">
               <e p="IChangeGold.cs" t="Include" />
+              <e p="IDamagable.cs" t="Include" />
               <e p="IInteractable.cs" t="Include" />
             </e>
-            <e p="InventoryLogic" t="Include">
-              <e p="Inventory.cs" t="Include" />
-              <e p="UIInventory.cs" t="Include" />
-            </e>
-            <e p="ItemEnviromentLogic" t="Include">
-              <e p="Kiste.cs" t="Include" />
-            </e>
-            <e p="ItemLogic" t="Include">
-              <e p="Item.cs" t="Include" />
-              <e p="ItemAbilities" t="Include">
+            <e p="ItemAbilities" t="Include">
+              <e p="AbillitiesScripts" t="Include">
                 <e p="AddGold.cs" t="Include" />
+                <e p="DealDamageSword.cs" t="Include" />
                 <e p="ItemAbility.cs" t="Include" />
               </e>
-              <e p="ItemPrefab.cs" t="Include" />
-              <e p="UIItem.cs" t="Include" />
             </e>
-            <e p="PlayerLogic" t="Include">
-              <e p="PlayerActions.cs" t="Include" />
-              <e p="PlayerMovement.cs" t="Include" />
-              <e p="PlayerMovementControlls.cs" t="Include" />
+            <e p="Logic" t="Include">
+              <e p="GoldLogic" t="Include">
+                <e p="PlayerGold.cs" t="Include" />
+                <e p="UIGold.cs" t="Include" />
+              </e>
+              <e p="HealthLogic" t="Include">
+                <e p="PlayerHealth.cs" t="Include" />
+                <e p="UIHealth.cs" t="Include" />
+              </e>
+              <e p="InventoryLogic" t="Include">
+                <e p="Inventory.cs" t="Include" />
+                <e p="UIInventory.cs" t="Include" />
+              </e>
+              <e p="ItemEnviromentLogic" t="Include">
+                <e p="Kiste.cs" t="Include" />
+                <e p="Zerstörbar.cs" t="Include" />
+              </e>
+              <e p="ItemLogic" t="Include">
+                <e p="Item.cs" t="Include" />
+                <e p="ItemPrefab.cs" t="Include" />
+                <e p="UIItem.cs" t="Include" />
+              </e>
+              <e p="PlayerLogic" t="Include">
+                <e p="PlayerActions.cs" t="Include" />
+                <e p="PlayerMovement.cs" t="Include" />
+                <e p="PlayerMovementControlls.cs" t="Include" />
+              </e>
             </e>
             <e p="SceneManagement" t="Include">
               <e p="SceneLoader.cs" t="Include" />

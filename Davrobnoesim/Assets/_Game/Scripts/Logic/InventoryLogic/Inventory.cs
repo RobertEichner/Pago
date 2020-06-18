@@ -105,7 +105,8 @@ public class Inventory : MonoBehaviour
         if (itemsInInv.ContainsKey(index) && itemsInInv[index] != null)
         {
             itemsInInv[index].Ability.UseItem(owner);
-            RemoveItem(index);
+            if(itemsInInv[index].RemoveAfterUse)
+                RemoveItem(index);
         }
         
     }

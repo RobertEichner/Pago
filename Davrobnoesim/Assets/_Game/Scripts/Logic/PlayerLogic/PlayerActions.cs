@@ -19,7 +19,7 @@ public class PlayerActions : MonoBehaviour
 
     private void OnInteract(InputValue value)
     {
-        Collider2D[] results = new Collider2D[22];
+        Collider2D[] results = new Collider2D[20];
         int hit = Physics2D.OverlapCircleNonAlloc(transform.position, interactRadius, results);
 
         if (hit < 1)
@@ -30,7 +30,7 @@ public class PlayerActions : MonoBehaviour
         for (int i = 0; i < results.Length; i++)
         {
             if(results[i] == null)
-                break;
+                continue;
             if (results[i].TryGetComponent<IInteractable>(out var toInteract))
             {
                 toInteract.Interact(gameObject);

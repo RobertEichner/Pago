@@ -11,6 +11,7 @@ public class Item : ScriptableObject
     [SerializeField] private Sprite icon;
 
     [SerializeField] private ItemAbility ability;
+    [SerializeField] private bool removeAfterUse = true;
 
     public int Id
     {
@@ -34,6 +35,12 @@ public class Item : ScriptableObject
     {
         get => ability;
         set => ability = value;
+    }
+    
+    public bool RemoveAfterUse
+    {
+        get => removeAfterUse;
+        set => removeAfterUse = value;
     }
 
     public Item CreateClone()

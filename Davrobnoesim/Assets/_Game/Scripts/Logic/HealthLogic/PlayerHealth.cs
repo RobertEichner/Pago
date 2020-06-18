@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour, IDamagable
 {
     [SerializeField] private int currentHealth = 0;
     [SerializeField] private int maxHealth = 1000;
@@ -43,11 +43,8 @@ public class PlayerHealth : MonoBehaviour
         CurrentHealth += amount;
     }
     
-    private void Update()
+    public void DealDamage(int amount)
     {
-        if (Input.GetButtonDown("Jump"))
-        {
-            ChangeHealth(-10);
-        }
+        ChangeHealth(-amount);
     }
 }
