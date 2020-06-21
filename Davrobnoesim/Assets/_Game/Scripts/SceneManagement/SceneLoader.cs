@@ -34,6 +34,6 @@ public class SceneLoader : MonoBehaviour
 
     public void ButtonExit()
     {
-        //spiel beenden implementieren
+        Application.Quit();
     }
 }
