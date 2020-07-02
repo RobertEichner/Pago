@@ -476,6 +476,42 @@ TextureImporter:
   - first:
       213: -384535914044181606
     second: overworld_83
+  - first:
+      213: -6009686917209133755
+    second: overworld_74
+  - first:
+      213: -3029952520509994829
+    second: overworld_75
+  - first:
+      213: 4126470419947378379
+    second: overworld_76
+  - first:
+      213: 3015731651223247675
+    second: overworld_77
+  - first:
+      213: 6034829143405683550
+    second: overworld_78
+  - first:
+      213: -6624427212570605670
+    second: overworld_79
+  - first:
+      213: -2745563195656784661
+    second: overworld_80
+  - first:
+      213: -3116170990023866641
+    second: overworld_81
+  - first:
+      213: -7444250614292944650
+    second: overworld_82
+  - first:
+      213: -5763696090931504033
+    second: overworld_83
+  - first:
+      213: -4994484104968675307
+    second: overworld_84
+  - first:
+      213: 7902465701369859114
+    second: overworld_85
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -2067,8 +2103,8 @@ TextureImporter:
       name: overworld_71
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
+        x: 224
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -2088,7 +2124,7 @@ TextureImporter:
       name: overworld_72
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 128
         width: 32
         height: 32
@@ -2109,8 +2145,8 @@ TextureImporter:
       name: overworld_73
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
+        x: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -2130,6 +2166,48 @@ TextureImporter:
       name: overworld_74
       rect:
         serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54def68e69d499ca0800000000000000
+      internalID: -6009686917209133755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: overworld_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8c3b86c3273f5d0800000000000000
+      internalID: -3029952520509994829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: overworld_76
+      rect:
+        serializedVersion: 2
         x: 32
         y: 96
         width: 32
@@ -2141,14 +2219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bc3e6fabc3a92290800000000000000
-      internalID: -7914614774910010184
+      spriteID: bc6de15ebfa244930800000000000000
+      internalID: 4126470419947378379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: overworld_75
+      name: overworld_77
       rect:
         serializedVersion: 2
         x: 64
@@ -2162,14 +2240,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61a1e0a3e157a5e70800000000000000
-      internalID: 9104718369366350358
+      spriteID: b3b501175f70ad920800000000000000
+      internalID: 3015731651223247675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: overworld_76
+      name: overworld_78
       rect:
         serializedVersion: 2
         x: 96
@@ -2183,14 +2261,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a913f89ec4fd9f50800000000000000
-      internalID: 6889932173113235877
+      spriteID: e53eedcc12500c350800000000000000
+      internalID: 6034829143405683550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: overworld_77
+      name: overworld_79
       rect:
         serializedVersion: 2
         x: 128
@@ -2204,50 +2282,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08a6916584aff9560800000000000000
-      internalID: 7322846707716811392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: overworld_78
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3b375a9da5856f80800000000000000
-      internalID: -8113932172972836034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: overworld_79
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a97e97bdaef2817b0800000000000000
-      internalID: -5253396279576631398
+      spriteID: a974c424c8e4114a0800000000000000
+      internalID: -6624427212570605670
       vertices: []
       indices: 
       edges: []
@@ -2257,6 +2293,48 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be4bd76f1dcc5e9d0800000000000000
+      internalID: -2745563195656784661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: overworld_81
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe60048aef221c4d0800000000000000
+      internalID: -3116170990023866641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: overworld_82
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 32
         width: 32
         height: 32
@@ -2267,14 +2345,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e57280b2251b75000800000000000000
-      internalID: 24683289441216350
+      spriteID: 6f8e514f185b0b890800000000000000
+      internalID: -7444250614292944650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: overworld_81
+      name: overworld_83
       rect:
         serializedVersion: 2
         x: 32
@@ -2288,14 +2366,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb66d8c8dc68f2d40800000000000000
-      internalID: 5561812282210346686
+      spriteID: f5c58b251fc3300b0800000000000000
+      internalID: -5763696090931504033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: overworld_82
+      name: overworld_84
       rect:
         serializedVersion: 2
         x: 0
@@ -2309,14 +2387,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 937c0fd91953968e0800000000000000
-      internalID: -1699768484819318983
+      spriteID: 510e10f1b2700bab0800000000000000
+      internalID: -4994484104968675307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: overworld_83
+      name: overworld_85
       rect:
         serializedVersion: 2
         x: 32
@@ -2330,8 +2408,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a933400af9ad9aaf0800000000000000
-      internalID: -384535914044181606
+      spriteID: a2ccbd3bfa23bad60800000000000000
+      internalID: 7902465701369859114
       vertices: []
       indices: 
       edges: []
