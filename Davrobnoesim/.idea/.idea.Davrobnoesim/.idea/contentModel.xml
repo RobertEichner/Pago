@@ -11,6 +11,11 @@
             <e p="DayNightCycle" t="Include">
               <e p="Clock.cs" t="Include" />
             </e>
+            <e p="DialogueSystem" t="Include">
+              <e p="Dialogue.cs" t="Include" />
+              <e p="DialogueManager.cs" t="Include" />
+              <e p="DialogueTrigger.cs" t="Include" />
+            </e>
             <e p="FollowMousePosition.cs" t="Include" />
             <e p="Interfaces" t="Include">
               <e p="IChangeGold.cs" t="Include" />
@@ -21,10 +26,17 @@
               <e p="AbillitiesScripts" t="Include">
                 <e p="AddGold.cs" t="Include" />
                 <e p="DealDamageSword.cs" t="Include" />
+                <e p="HealHealth.cs" t="Include" />
                 <e p="ItemAbility.cs" t="Include" />
               </e>
             </e>
             <e p="Logic" t="Include">
+              <e p="EnemyLogic" t="Include">
+                <e p="EnemySimple.cs" t="Include" />
+                <e p="State.cs" t="Include" />
+                <e p="StateMachine.cs" t="Include" />
+                <e p="Transition.cs" t="Include" />
+              </e>
               <e p="GoldLogic" t="Include">
                 <e p="PlayerGold.cs" t="Include" />
                 <e p="UIGold.cs" t="Include" />
@@ -39,6 +51,7 @@
               </e>
               <e p="ItemEnviromentLogic" t="Include">
                 <e p="Kiste.cs" t="Include" />
+                <e p="SpawnerOnDestroy.cs" t="Include" />
                 <e p="Zerstörbar.cs" t="Include" />
               </e>
               <e p="ItemLogic" t="Include">
@@ -53,6 +66,7 @@
               </e>
             </e>
             <e p="SceneManagement" t="Include">
+              <e p="ColliderSceneLoader.cs" t="Include" />
               <e p="SceneLoader.cs" t="Include" />
             </e>
           </e>

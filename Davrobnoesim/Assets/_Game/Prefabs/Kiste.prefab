@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
+  m_Color: {r: 0.69803923, g: 0.5019608, b: 0.3647059, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -146,6 +146,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inv: {fileID: 5739112197122807127}
+  activeInThisRadius: 2
+  itemList:
+  - {fileID: 11400000, guid: 4ab395f5c15f0c446aa14fcca6d5700c, type: 2}
+  - {fileID: 11400000, guid: 4bac209fedfa99d4fbd4c5fc78804f6c, type: 2}
 --- !u!114 &5739112195963325559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,7 +259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5739112197122807120
 RectTransform:
   m_ObjectHideFlags: 0
