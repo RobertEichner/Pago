@@ -15,4 +15,5 @@ MonoBehaviour:
   id: 2000
   title: Healing Potion
   icon: {fileID: 21300000, guid: 64ff30ec50e5e1940b4b3ba39441affa, type: 3}
-  ability: {fileID: 0}
+  ability: {fileID: 11400000, guid: 779a63a795afe654d955af83281e851c, type: 2}
+  removeAfterUse: 1

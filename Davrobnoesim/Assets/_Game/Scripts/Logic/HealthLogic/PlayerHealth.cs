@@ -8,6 +8,8 @@ public class PlayerHealth : MonoBehaviour, IDamagable
     [SerializeField] private int currentHealth = 0;
     [SerializeField] private int maxHealth = 1000;
 
+    [SerializeField] private ParticleSystem partSys;
+
     public event EventHandler<HealthChangedArgs> OnHealthChanged;
 
     private void Awake()
@@ -46,5 +48,6 @@ public class PlayerHealth : MonoBehaviour, IDamagable
     public void DealDamage(int amount)
     {
         ChangeHealth(-amount);
+        Instantiate(partSys, transform.position, Quaternion.identity, transform);
     }
 }

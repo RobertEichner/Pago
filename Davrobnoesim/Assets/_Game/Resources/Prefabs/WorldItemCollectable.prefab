@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6513302425874350037}
   - component: {fileID: 6513302425874350039}
   m_Layer: 0
-  m_Name: WorldItemBase
+  m_Name: WorldItemCollectable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 2010179809
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 42771867d5b7a794eaa84f81e33ff1c0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 64ff30ec50e5e1940b4b3ba39441affa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,7 +99,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -121,4 +121,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa27933b3f12147429e5fb6ab0551ff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: b815c3c53e8bd6e4fb512eec7bfdb5ab, type: 2}
+  triggerToDo: 0

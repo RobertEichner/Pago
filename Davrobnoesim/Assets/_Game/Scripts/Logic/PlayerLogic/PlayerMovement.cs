@@ -9,8 +9,9 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
 
     private Vector2 direction;
+    public Vector2 Direction => direction.normalized;
 
-    [SerializeField] private float speed = 8f;
+    private float speed = 8f;
     
 
     private void Awake()

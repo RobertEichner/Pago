@@ -13,7 +13,7 @@ public class DealDamageSword : ItemAbility
         int hit = Physics2D.OverlapCircleNonAlloc(target.transform.position, 3f, results);
 
         if (hit < 1)
-            return;
+            return;    
         
 
         //int loopUntil = hit + 1 > results.Length ? results.Length : hit + 1;

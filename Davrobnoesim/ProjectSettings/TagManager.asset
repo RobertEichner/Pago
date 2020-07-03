@@ -16,8 +16,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Player
+  - Enemy
   - 
   - 
   - 
@@ -53,4 +53,7 @@ TagManager:
     locked: 0
   - name: Items
     uniqueID: 2010179809
+    locked: 0
+  - name: Particles
+    uniqueID: 3629085205
     locked: 0

@@ -13,6 +13,7 @@ public class ItemPrefab : MonoBehaviour
     [SerializeField] private Item item = null;
     [SerializeField] private ItemState triggerToDo;
     
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -55,10 +56,18 @@ public class ItemPrefab : MonoBehaviour
         }
     }
 
-    private enum ItemState
+    public enum ItemState
     {
         ToInventory,
         ToUse,
+    }
+
+    public void UpdateItem(Item item, ItemState state)
+    {
+        this.item = item;
+        triggerToDo = state;
+        TryGetComponent(out sRenderer);
+        sRenderer.sprite = item.Icon;
     }
     
 }
