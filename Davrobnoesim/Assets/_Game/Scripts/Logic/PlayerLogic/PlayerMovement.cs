@@ -12,17 +12,23 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 Direction => direction.normalized;
 
     [SerializeField] private float speed = 4f;
+
+    private Animator anim;
     
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
 
     }
     
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + (direction * (Time.fixedDeltaTime * speed)));
+        anim.SetFloat("xVelocity", direction.x);
+        anim.SetFloat("yVelocity", direction.y);
+        anim.SetFloat("speed", speed);
     }
 
     public void OnMovement(InputValue value)
