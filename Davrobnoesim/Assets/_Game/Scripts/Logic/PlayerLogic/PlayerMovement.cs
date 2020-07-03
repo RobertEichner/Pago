@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + (direction * (Time.fixedDeltaTime * speed)));
         anim.SetFloat("xVelocity", direction.x);
         anim.SetFloat("yVelocity", direction.y);
-        anim.SetFloat("speed", speed);
+        anim.SetFloat("speed", direction.sqrMagnitude);
     }
 
     public void OnMovement(InputValue value)
