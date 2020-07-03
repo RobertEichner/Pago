@@ -9,13 +9,15 @@ public class DealDamageSword : ItemAbility
 
     public override void UseItem(GameObject target)
     {
+        if(target.TryGetComponent<Animator>(out var anim))
+            anim.SetTrigger("attack");
         Collider2D[] results = new Collider2D[22];
         int hit = Physics2D.OverlapCircleNonAlloc(target.transform.position, 3f, results);
 
         if (hit < 1)
             return;    
         
-
+        
         //int loopUntil = hit + 1 > results.Length ? results.Length : hit + 1;
 
         for (int i = 0; i < results.Length; i++)

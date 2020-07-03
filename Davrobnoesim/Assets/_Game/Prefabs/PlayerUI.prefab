@@ -777,7 +777,7 @@ GameObject:
   - component: {fileID: 8614097836684918274}
   - component: {fileID: 195383051862252007}
   - component: {fileID: 8959506774789987233}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: UIBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -902,7 +902,7 @@ GameObject:
   - component: {fileID: 9005029682241803547}
   - component: {fileID: 9005029682241803544}
   - component: {fileID: 9005029682241803546}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Gold
   m_TagString: Untagged
   m_Icon: {fileID: 0}

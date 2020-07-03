@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 direction;
     public Vector2 Direction => direction.normalized;
 
-    private float speed = 8f;
+    [SerializeField] private float speed = 4f;
     
 
     private void Awake()

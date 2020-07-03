@@ -23,6 +23,7 @@ public class UIItem : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        Debug.Log("Miep");
         if (eventData.button == PointerEventData.InputButton.Left)
         {
             item = uiInventory.OwnerInv.GetItemFromIndex(inSlot);
