@@ -26,8 +26,11 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + (direction * (Time.fixedDeltaTime * speed)));
-        anim.SetFloat("xVelocity", direction.x);
-        anim.SetFloat("yVelocity", direction.y);
+        if (direction != Vector2.zero)
+        {
+            anim.SetFloat("xVelocity", direction.x);
+            anim.SetFloat("yVelocity", direction.y);
+        }
         anim.SetFloat("speed", direction.sqrMagnitude);
     }
 
