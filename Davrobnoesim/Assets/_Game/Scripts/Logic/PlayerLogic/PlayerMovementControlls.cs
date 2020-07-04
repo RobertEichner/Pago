@@ -57,6 +57,14 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Escape"",
+                    ""type"": ""Button"",
+                    ""id"": ""22e4606f-c70f-4656-b11e-d1454ffa9462"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -158,6 +166,17 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
                     ""action"": ""InventarOpen"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9db3bae3-e210-44a5-81eb-98cb79a9935c"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Escape"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -171,6 +190,7 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
         m_PlayerMovement_HotbarAttackLeft = m_PlayerMovement.FindAction("HotbarAttackLeft", throwIfNotFound: true);
         m_PlayerMovement_HotbarAttackRight = m_PlayerMovement.FindAction("HotbarAttackRight", throwIfNotFound: true);
         m_PlayerMovement_InventarOpen = m_PlayerMovement.FindAction("InventarOpen", throwIfNotFound: true);
+        m_PlayerMovement_Escape = m_PlayerMovement.FindAction("Escape", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -225,6 +245,7 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerMovement_HotbarAttackLeft;
     private readonly InputAction m_PlayerMovement_HotbarAttackRight;
     private readonly InputAction m_PlayerMovement_InventarOpen;
+    private readonly InputAction m_PlayerMovement_Escape;
     public struct PlayerMovementActions
     {
         private @PlayerMovementControlls m_Wrapper;
@@ -234,6 +255,7 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
         public InputAction @HotbarAttackLeft => m_Wrapper.m_PlayerMovement_HotbarAttackLeft;
         public InputAction @HotbarAttackRight => m_Wrapper.m_PlayerMovement_HotbarAttackRight;
         public InputAction @InventarOpen => m_Wrapper.m_PlayerMovement_InventarOpen;
+        public InputAction @Escape => m_Wrapper.m_PlayerMovement_Escape;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMovement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -258,6 +280,9 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
                 @InventarOpen.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnInventarOpen;
                 @InventarOpen.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnInventarOpen;
                 @InventarOpen.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnInventarOpen;
+                @Escape.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnEscape;
+                @Escape.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnEscape;
+                @Escape.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnEscape;
             }
             m_Wrapper.m_PlayerMovementActionsCallbackInterface = instance;
             if (instance != null)
@@ -277,6 +302,9 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
                 @InventarOpen.started += instance.OnInventarOpen;
                 @InventarOpen.performed += instance.OnInventarOpen;
                 @InventarOpen.canceled += instance.OnInventarOpen;
+                @Escape.started += instance.OnEscape;
+                @Escape.performed += instance.OnEscape;
+                @Escape.canceled += instance.OnEscape;
             }
         }
     }
@@ -288,5 +316,6 @@ public class @PlayerMovementControlls : IInputActionCollection, IDisposable
         void OnHotbarAttackLeft(InputAction.CallbackContext context);
         void OnHotbarAttackRight(InputAction.CallbackContext context);
         void OnInventarOpen(InputAction.CallbackContext context);
+        void OnEscape(InputAction.CallbackContext context);
     }
 }

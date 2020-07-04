@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Game/Scenes/LevelTestScene.unity
-    guid: 3a2074d9473c0f7499a929b0203428c6
-  - enabled: 1
-    path: Assets/_Game/Scenes/PauseMenu.unity
-    guid: 9d846b098f567d140bd53c3c1e54bc60
+    path: Assets/_Game/Scenes/NorthernForest.unity
+    guid: 747325a9ffb7d45498084b20c84caf63
   m_configObjects: {}

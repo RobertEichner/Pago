@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerActions : MonoBehaviour
 {
@@ -69,5 +70,10 @@ public class PlayerActions : MonoBehaviour
     private bool IsOverUI()
     {
         return EventSystem.current.IsPointerOverGameObject();
+    }
+
+    private void OnEscape(InputValue value)
+    {
+        Application.Quit();
     }
 }
