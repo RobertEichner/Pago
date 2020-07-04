@@ -9,7 +9,9 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
 
     private Vector2 direction;
-    public Vector2 Direction => direction.normalized;
+
+    private Vector2 lastFacedDirection = Vector2.zero;
+    public Vector2 Direction => lastFacedDirection.normalized;
 
     [SerializeField] private float speed = 4f;
 
@@ -37,5 +39,7 @@ public class PlayerMovement : MonoBehaviour
     public void OnMovement(InputValue value)
     {
         direction = value.Get<Vector2>();
+        if (!direction.Equals(Vector2.zero))
+            lastFacedDirection = direction;
     }
 }

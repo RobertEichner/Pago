@@ -17,8 +17,7 @@ public class DealDamageSword : ItemAbility
         
         target.TryGetComponent(out player);
         Vector2 dir = player != null ? player.Direction : Vector2.right;
-        if(dir.Equals(Vector2.zero))
-            dir = Vector2.down;
+       
 
         RaycastHit2D hit = Physics2D.CircleCast(target.transform.position, 0.25f, dir * 0.1f, 1f, layerMask);
 
