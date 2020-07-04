@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class PlayerActions : MonoBehaviour
@@ -41,14 +42,14 @@ public class PlayerActions : MonoBehaviour
     
     private void OnHotbarAttackLeft(InputValue value)
     {
-        if(isOpen)
+        if(IsOverUI())
             return;
         hotbarInventory.UseSlot(0);
     }
     
     private void OnHotbarAttackRight(InputValue value)
     {
-        if(isOpen)
+        if(IsOverUI())
             return;
         hotbarInventory.UseSlot(1);
     }
@@ -63,5 +64,10 @@ public class PlayerActions : MonoBehaviour
         {
             toInv.OwnerInv.UpdateAllSlots();
         }
+    }
+
+    private bool IsOverUI()
+    {
+        return EventSystem.current.IsPointerOverGameObject();
     }
 }
