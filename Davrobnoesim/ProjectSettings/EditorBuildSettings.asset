@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Game/Scenes/NorthernForest.unity
     guid: 747325a9ffb7d45498084b20c84caf63
+  - enabled: 1
+    path: Assets/_Game/Scenes/CursedGrove.unity
+    guid: 333a72e461c4ed64987d2b8f50e63d64
   m_configObjects: {}

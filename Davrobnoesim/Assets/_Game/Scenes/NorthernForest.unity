@@ -90029,6 +90029,7 @@ GameObject:
   - component: {fileID: 2038762539}
   - component: {fileID: 2038762538}
   - component: {fileID: 2038762537}
+  - component: {fileID: 2038762540}
   m_Layer: 0
   m_Name: Cursed Grove
   m_TagString: Untagged
@@ -90048,9 +90049,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01ef80765c4dda04583d8eea30289673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 3
+  scene: 1
   x: 0
-  y: -4
+  y: -3
   animator: {fileID: 1919408165}
 --- !u!61 &2038762538
 BoxCollider2D:
@@ -90092,6 +90093,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2038762540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038762536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac70ae7320461b74a80103f9452a3d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathTaken: -1
 --- !u!1 &2040702347
 GameObject:
   m_ObjectHideFlags: 0
