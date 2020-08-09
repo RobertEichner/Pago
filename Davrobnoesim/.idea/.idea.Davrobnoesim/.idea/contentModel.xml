@@ -16,6 +16,7 @@
               <e p="DialogueManager.cs" t="Include" />
               <e p="DialogueTrigger.cs" t="Include" />
             </e>
+            <e p="FindPlayerScript.cs" t="Include" />
             <e p="FollowMousePosition.cs" t="Include" />
             <e p="Interfaces" t="Include">
               <e p="IChangeGold.cs" t="Include" />
@@ -60,6 +61,7 @@
                 <e p="ItemPrefab.cs" t="Include" />
                 <e p="UIItem.cs" t="Include" />
               </e>
+              <e p="Maze.cs" t="Include" />
               <e p="PlayerLogic" t="Include">
                 <e p="PlayerActions.cs" t="Include" />
                 <e p="PlayerMovement.cs" t="Include" />
@@ -68,6 +70,7 @@
             </e>
             <e p="SceneManagement" t="Include">
               <e p="ColliderSceneLoader.cs" t="Include" />
+              <e p="PlayerDestination.cs" t="Include" />
               <e p="SceneLoader.cs" t="Include" />
             </e>
           </e>
