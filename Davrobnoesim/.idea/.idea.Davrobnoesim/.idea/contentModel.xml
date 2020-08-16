@@ -34,6 +34,7 @@
             <e p="Logic" t="Include">
               <e p="BridgeLogic.cs" t="Include" />
               <e p="EnemyLogic" t="Include">
+                <e p="EnemyCollAvoid.cs" t="Include" />
                 <e p="EnemySimple.cs" t="Include" />
                 <e p="State.cs" t="Include" />
                 <e p="StateMachine.cs" t="Include" />
@@ -66,6 +67,12 @@
                 <e p="PlayerActions.cs" t="Include" />
                 <e p="PlayerMovement.cs" t="Include" />
                 <e p="PlayerMovementControlls.cs" t="Include" />
+              </e>
+              <e p="QuestLogic" t="Include">
+                <e p="Quest.cs" t="Include" />
+                <e p="QuestEvent.cs" t="Include" />
+                <e p="QuestManager.cs" t="Include" />
+                <e p="QuestPath.cs" t="Include" />
               </e>
             </e>
             <e p="SceneManagement" t="Include">
