@@ -7,17 +7,17 @@ using UnityEngine.SceneManagement;
 
 public class Maze : MonoBehaviour
 {
-    static LinkedList <PathTile> path = new LinkedList <PathTile>();
+    static LinkedList<PathTile> path = new LinkedList<PathTile>();
 
     private static int playerPos = 0;
     private static int pathLength;
     [SerializeField] int pathTaken = -1;
-    
+
     public void genPath()
     {
         System.Random rdm = new System.Random();
-        pathLength = rdm.Next(5, 11);
-        int[] dir = {};
+        pathLength = rdm.Next(3, 6);
+        int[] dir = { };
         int next = 0;
         int prev = 2; //south exit
 
@@ -49,7 +49,7 @@ public class Maze : MonoBehaviour
             //Debug.Log(prev + " " + next);
             prev = next;
 
-            
+
         }
         Debug.Log(pathLength);
         Debug.Log(path.ElementAt(0).next);
@@ -65,6 +65,8 @@ public class Maze : MonoBehaviour
     }
     public void OnTriggerEnter2D()
     {
+        GameObject player = GameObject.FindWithTag("Player");
+
         if (pathTaken == -1)
         {
             playerPos = 0;
@@ -78,10 +80,21 @@ public class Maze : MonoBehaviour
         else
             playerPos = 0;
 
-        if (playerPos == pathLength)
-            Debug.Log("Finish");
+        if (playerPos == pathLength) {
+            SceneManager.activeSceneChanged += SceneChanged;
+        }
+
+    } 
+
+    private void SceneChanged(Scene current, Scene next)
+    {
+        GameObject player = GameObject.FindWithTag("Player"); 
+        player.transform.position = new Vector2(0, 13.5f);
+        SceneManager.activeSceneChanged -= SceneChanged;
     }
 }
+
+
 
 
 
