@@ -12,5 +12,6 @@ public class FindPlayerScript : MonoBehaviour
       TryGetComponent(out vcam);
       Transform playerPos = GameObject.FindWithTag("Player").transform;
       vcam.Follow = playerPos;
+      vcam.LookAt = null;
    }
 }
