@@ -8778,17 +8778,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 145669880, guid: be319a2fff28f5146abf8616bcbccf23, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8938534789740253648, guid: be319a2fff28f5146abf8616bcbccf23,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.77
+      value: 4.03
       objectReference: {fileID: 0}
     - target: {fileID: 8938534789740253648, guid: be319a2fff28f5146abf8616bcbccf23,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.92
+      value: 4.47
       objectReference: {fileID: 0}
     - target: {fileID: 8938534789740253648, guid: be319a2fff28f5146abf8616bcbccf23,
         type: 3}
@@ -8842,6 +8842,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be319a2fff28f5146abf8616bcbccf23, type: 3}
+--- !u!1 &709794826 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8938534789740253651, guid: be319a2fff28f5146abf8616bcbccf23,
+    type: 3}
+  m_PrefabInstance: {fileID: 676447054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &709794827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709794826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dc925fc9b2d678469531e911263150a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  speed: 3
+  attentionRange: 4
+  attackCooldown: 2
+  attackRange: 1
+  attackDamage: 100
+  layerMaskToHit:
+    serializedVersion: 2
+    m_Bits: 1024
+  avoidDistance: 0.5
+  lookAhead: 1
+  drop: []
+  state: 
+  layerToBlockDrop:
+    serializedVersion: 2
+    m_Bits: 8192
+  partSys: []
 --- !u!1 &1083647706 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1733048035, guid: 66cc23972b261fa499eedb7156d61542,

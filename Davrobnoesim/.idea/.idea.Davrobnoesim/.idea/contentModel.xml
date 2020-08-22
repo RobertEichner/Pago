@@ -70,9 +70,7 @@
               </e>
               <e p="QuestLogic" t="Include">
                 <e p="Quest.cs" t="Include" />
-                <e p="QuestEvent.cs" t="Include" />
                 <e p="QuestManager.cs" t="Include" />
-                <e p="QuestPath.cs" t="Include" />
               </e>
             </e>
             <e p="SceneManagement" t="Include">

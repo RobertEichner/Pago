@@ -2,17 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Quest : MonoBehaviour
+[CreateAssetMenu(menuName = "Quest/Quest erstellen")]
+public class Quest: ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private string name;
+    [SerializeField] private string description;
+    [SerializeField] private int questId = -1;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

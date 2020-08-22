@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
+    private 
     // Start is called before the first frame update
     void Start()
     {
