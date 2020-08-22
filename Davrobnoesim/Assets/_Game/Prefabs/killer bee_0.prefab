@@ -133,17 +133,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  partSys:
-  - {fileID: 8259126638563324121, guid: 728d15ac58313f34b8c157694fcb9a57, type: 3}
-  - {fileID: 2148381519164243429, guid: 932b2d8d3226f174cbcd01f9d07cd0dd, type: 3}
   speed: 3
   attentionRange: 4
   attackCooldown: 2
   attackRange: 1
   attackDamage: 100
-  layerMask:
+  layerMaskToHit:
     serializedVersion: 2
     m_Bits: 1024
   drop:
   - {fileID: 11400000, guid: 4bac209fedfa99d4fbd4c5fc78804f6c, type: 2}
   state: 00000000
+  layerToBlockDrop:
+    serializedVersion: 2
+    m_Bits: 8192
+  partSys:
+  - {fileID: 8259126638563324121, guid: 728d15ac58313f34b8c157694fcb9a57, type: 3}
+  - {fileID: 2148381519164243429, guid: 932b2d8d3226f174cbcd01f9d07cd0dd, type: 3}

@@ -14,7 +14,13 @@ public class UIHealth : MonoBehaviour
     {
         TryGetComponent<Slider>(out slider);
     }
-    
+
+    private void Reset()
+    {
+        if (!playerHealth)
+            playerHealth = FindObjectOfType<PlayerHealth>();
+    }
+
     private void OnEnable()
     {
         UpdateGoldUI(playerHealth.CurrentHealth, playerHealth.MaxHealth);

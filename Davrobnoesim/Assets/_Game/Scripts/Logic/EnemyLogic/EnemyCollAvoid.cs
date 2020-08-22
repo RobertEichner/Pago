@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class EnemySimple : MonoBehaviour, IDamagable
+public class EnemyCollAvoid : MonoBehaviour, IDamagable
 {
     [Header("Enemy Stats")]
     [SerializeField] private int health = 100;
@@ -14,6 +14,8 @@ public class EnemySimple : MonoBehaviour, IDamagable
     [SerializeField] private float attackRange = 1f;
     [SerializeField] private int attackDamage = 100;
     [SerializeField] private LayerMask layerMaskToHit = -1;
+    [SerializeField] private float avoidDistance = 0.5f;
+    [SerializeField] private float lookAhead = 1f;
     [Header("EnemyDrop Logic")]
     [SerializeField] private Item[] drop = null;
     [SerializeField] private ItemPrefab.ItemState[] state = null;
@@ -52,7 +54,16 @@ public class EnemySimple : MonoBehaviour, IDamagable
         }
         else
         {
-            transform.position += direction.normalized * (Time.deltaTime * speed);   
+            Vector3 ray = direction.normalized * lookAhead;
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, ray, direction.magnitude, layerToBlockDrop);
+            if (!hit)
+                transform.position += direction.normalized * (Time.deltaTime * speed);
+            else
+            {
+                Vector3 newTarget = hit.point + hit.normal * avoidDistance;
+                Vector3 targetDir = newTarget - transform.position;
+                transform.position += targetDir.normalized * (Time.deltaTime * speed);
+            }
         }
 
         if(dist > attackRange)
@@ -152,5 +163,4 @@ public class EnemySimple : MonoBehaviour, IDamagable
 
         return target.position;
     }
-    
 }

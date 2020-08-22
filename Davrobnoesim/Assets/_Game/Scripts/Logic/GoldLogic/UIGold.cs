@@ -15,6 +15,12 @@ public class UIGold : MonoBehaviour
         TryGetComponent<TextMeshProUGUI>(out text);
     }
     
+    private void Reset()
+    {
+        if (!playerGold)
+            playerGold = FindObjectOfType<PlayerGold>();
+    }
+    
     private void OnEnable()
     {
         UpdateGoldUI(playerGold.CurrentGold, playerGold.MaxGold);

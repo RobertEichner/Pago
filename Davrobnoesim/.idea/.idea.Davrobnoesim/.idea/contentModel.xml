@@ -16,6 +16,7 @@
               <e p="DialogueManager.cs" t="Include" />
               <e p="DialogueTrigger.cs" t="Include" />
             </e>
+            <e p="FindPlayerScript.cs" t="Include" />
             <e p="FollowMousePosition.cs" t="Include" />
             <e p="Interfaces" t="Include">
               <e p="IChangeGold.cs" t="Include" />
@@ -33,6 +34,7 @@
             <e p="Logic" t="Include">
               <e p="BridgeLogic.cs" t="Include" />
               <e p="EnemyLogic" t="Include">
+                <e p="EnemyCollAvoid.cs" t="Include" />
                 <e p="EnemySimple.cs" t="Include" />
                 <e p="State.cs" t="Include" />
                 <e p="StateMachine.cs" t="Include" />
@@ -60,14 +62,22 @@
                 <e p="ItemPrefab.cs" t="Include" />
                 <e p="UIItem.cs" t="Include" />
               </e>
+              <e p="Maze.cs" t="Include" />
               <e p="PlayerLogic" t="Include">
                 <e p="PlayerActions.cs" t="Include" />
                 <e p="PlayerMovement.cs" t="Include" />
                 <e p="PlayerMovementControlls.cs" t="Include" />
               </e>
+              <e p="QuestLogic" t="Include">
+                <e p="Quest.cs" t="Include" />
+                <e p="QuestEvent.cs" t="Include" />
+                <e p="QuestManager.cs" t="Include" />
+                <e p="QuestPath.cs" t="Include" />
+              </e>
             </e>
             <e p="SceneManagement" t="Include">
               <e p="ColliderSceneLoader.cs" t="Include" />
+              <e p="PlayerDestination.cs" t="Include" />
               <e p="SceneLoader.cs" t="Include" />
             </e>
           </e>
