@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da311bbeef3bea418b5159dacd36abc, type: 3}
+  m_Name: QuestTest
+  m_EditorClassIdentifier: 
+  name: HalloQuest
+  description: "T\xF6te ein Gegner"
+  questId: 1
+  task: {fileID: 11400000, guid: e10477800860bb94eb74dfb75ce17308, type: 2}
