@@ -9,8 +9,8 @@ public class Kiste : MonoBehaviour, IInteractable
 
     [SerializeField] private Canvas inv = null;
     [SerializeField] private float activeInThisRadius = 2f;
-    [SerializeField] private Item[] itemList = null;
-    
+    [SerializeField] private KisteSave invSave = null;
+
     private Transform targetPos = null;
     private Inventory invToFill;
     
@@ -22,12 +22,12 @@ public class Kiste : MonoBehaviour, IInteractable
 
     private void Start()
     {
-        if(itemList == null)
+        if(invSave == null)
             return;
 
-        foreach (var t in itemList)
+        for (int i = 0; i < invSave.ItemList.Length; i++)
         {
-            invToFill.GiveItem(t);
+            invToFill.GiveItemAt(invSave.ItemList[i], i);
         }
     }
 
@@ -44,5 +44,10 @@ public class Kiste : MonoBehaviour, IInteractable
             if(Vector2.Distance(transform.position, targetPos.position) > activeInThisRadius)
                 Interact(gameObject);
         }
+    }
+
+    private void OnDestroy()
+    {
+        invSave.ItemList = invToFill.GetItemArray();
     }
 }
