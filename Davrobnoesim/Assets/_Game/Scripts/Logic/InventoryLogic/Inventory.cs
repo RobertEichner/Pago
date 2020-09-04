@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public Dictionary<int, Item> itemsInInv = new Dictionary<int, Item>();
+    private Dictionary<int, Item> itemsInInv = new Dictionary<int, Item>();
     [SerializeField] private UIInventory uIInventory = null;
     [SerializeField] private int maxItemSlots = 1;
     private GameObject owner;
@@ -31,6 +31,18 @@ public class Inventory : MonoBehaviour
         if (itemsInInv.ContainsKey(index) && itemsInInv[index] != null)
             return itemsInInv[index];
         return null;
+    }
+
+    public Item[] GetItemArray()
+    {
+        Item[] itemList = new Item[maxItemSlots];
+
+        for (int i = 0; i < maxItemSlots; i++)
+        {
+            itemList[i] = GetItemFromIndex(i);
+        }
+
+        return itemList;
     }
     
     private void ItemChange(Item item, int i)
