@@ -13,13 +13,14 @@ public class Maze : MonoBehaviour
     private static int pathLength;
     [SerializeField] int pathTaken = -1;
 
+    System.Random rdm = new System.Random(System.DateTime.Now.Millisecond);
+
     public void genPath()
     {
-        System.Random rdm = new System.Random();
-        pathLength = rdm.Next(3, 6);
+        pathLength = 5;
         int[] dir = { };
         int next = 0;
-        int prev = 2; //south exit
+        int prev = 0; //south exit
 
         int[] r0 = new int[3] { 0, 1, 3 };
         int[] r1 = new int[3] { 0, 1, 2 };
@@ -51,17 +52,11 @@ public class Maze : MonoBehaviour
 
 
         }
-        Debug.Log(pathLength);
         Debug.Log(path.ElementAt(0).next);
         Debug.Log(path.ElementAt(1).next);
         Debug.Log(path.ElementAt(2).next);
         Debug.Log(path.ElementAt(3).next);
         Debug.Log(path.ElementAt(4).next);
-        Debug.Log(path.ElementAt(5).next);
-        Debug.Log(path.ElementAt(6).next);
-        Debug.Log(path.ElementAt(7).next);
-        Debug.Log(path.ElementAt(8).next);
-        Debug.Log(path.ElementAt(9).next);
     }
     public void OnTriggerEnter2D()
     {
@@ -77,19 +72,24 @@ public class Maze : MonoBehaviour
         {
             playerPos++;
         }
-        else
-            playerPos = 0;
+        else if (pathTaken != -1)
+            SceneManager.activeSceneChanged += SceneChanged; //exit
 
         if (playerPos == pathLength) {
-            SceneManager.activeSceneChanged += SceneChanged;
+            SceneManager.activeSceneChanged += SceneChanged; //teleport
         }
 
     } 
 
     private void SceneChanged(Scene current, Scene next)
     {
-        GameObject player = GameObject.FindWithTag("Player"); 
-        player.transform.position = new Vector2(0, 13.5f);
+        GameObject player = GameObject.FindWithTag("Player");
+
+        if (playerPos == pathLength)
+            player.transform.position = new Vector2(0, 13.5f);
+        else
+            player.transform.position = new Vector2(0, -25f);
+
         SceneManager.activeSceneChanged -= SceneChanged;
     }
 }
