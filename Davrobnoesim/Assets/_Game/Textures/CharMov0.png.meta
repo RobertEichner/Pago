@@ -107,6 +107,54 @@ TextureImporter:
   - first:
       213: 5362108942980819110
     second: CharMov0_34
+  - first:
+      213: -1617244503743468766
+    second: CharMov0_5
+  - first:
+      213: 615654574679843279
+    second: CharMov0_6
+  - first:
+      213: -2155805855033664837
+    second: CharMov0_7
+  - first:
+      213: 8937133523889025652
+    second: CharMov0_8
+  - first:
+      213: -5078880087377673482
+    second: CharMov0_9
+  - first:
+      213: -503074856308548813
+    second: CharMov0_10
+  - first:
+      213: 1915580260048002101
+    second: CharMov0_11
+  - first:
+      213: -2207536014570641173
+    second: CharMov0_12
+  - first:
+      213: -8637757226462841326
+    second: CharMov0_13
+  - first:
+      213: 8799251314286509131
+    second: CharMov0_14
+  - first:
+      213: -4774545659287594965
+    second: CharMov0_15
+  - first:
+      213: -7541159754726742806
+    second: CharMov0_0
+  - first:
+      213: -1629224925209700075
+    second: CharMov0_1
+  - first:
+      213: -3515823030904441880
+    second: CharMov0_2
+  - first:
+      213: 486416384458628469
+    second: CharMov0_3
+  - first:
+      213: -1198846554496548850
+    second: CharMov0_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -192,118 +240,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CharMov0_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 182
-        width: 32
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db41da1858b77bc60800000000000000
-      internalID: 7833865890170737853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharMov0_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 182
-        width: 32
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85d921ebe39f61de0800000000000000
-      internalID: -1362627789360816808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharMov0_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 182
-        width: 32
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9310ad10b4b5787d0800000000000000
-      internalID: -2916261855987367623
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharMov0_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 182
-        width: 32
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4fa42c43a41f33530800000000000000
-      internalID: 3833673008837446388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharMov0_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 182
-        width: 32
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6bb44423a2858de40800000000000000
-      internalID: 5681387868183088054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: CharMov0_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 131
-        width: 32
-        height: 51
+        x: 64
+        y: 96
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,8 +254,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b54748ef15dadb60800000000000000
-      internalID: 7771758439998899641
+      spriteID: 22bea6f31b46e89e0800000000000000
+      internalID: -1617244503743468766
       vertices: []
       indices: 
       edges: []
@@ -321,10 +264,10 @@ TextureImporter:
       name: CharMov0_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 131
-        width: 32
-        height: 51
+        x: 128
+        y: 96
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,8 +275,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6008e8a8688b2e900800000000000000
-      internalID: 712334579067682822
+      spriteID: fc1e224e29e3b8800800000000000000
+      internalID: 615654574679843279
       vertices: []
       indices: 
       edges: []
@@ -342,10 +285,10 @@ TextureImporter:
       name: CharMov0_7
       rect:
         serializedVersion: 2
-        x: 64
-        y: 131
-        width: 32
-        height: 51
+        x: 192
+        y: 96
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,8 +296,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 896b1ad90238df3b0800000000000000
-      internalID: -5477077395705842024
+      spriteID: bbad20e2ff90512e0800000000000000
+      internalID: -2155805855033664837
       vertices: []
       indices: 
       edges: []
@@ -363,10 +306,10 @@ TextureImporter:
       name: CharMov0_8
       rect:
         serializedVersion: 2
-        x: 96
-        y: 131
-        width: 32
-        height: 51
+        x: 0
+        y: 48
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,8 +317,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aba716efc7e0670e0800000000000000
-      internalID: -2272613031955301702
+      spriteID: 472f3a9c693170c70800000000000000
+      internalID: 8937133523889025652
       vertices: []
       indices: 
       edges: []
@@ -384,10 +327,10 @@ TextureImporter:
       name: CharMov0_9
       rect:
         serializedVersion: 2
-        x: 128
-        y: 131
-        width: 32
-        height: 51
+        x: 64
+        y: 48
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,8 +338,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bdd67ba7f321f980800000000000000
-      internalID: -8506978674485568071
+      spriteID: 6f28c0738713489b0800000000000000
+      internalID: -5078880087377673482
       vertices: []
       indices: 
       edges: []
@@ -405,10 +348,10 @@ TextureImporter:
       name: CharMov0_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 80
-        width: 32
-        height: 51
+        x: 128
+        y: 48
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -416,8 +359,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bda0e64fce1d1c30800000000000000
-      internalID: 4331652292196478384
+      spriteID: 33b5c466518b409f0800000000000000
+      internalID: -503074856308548813
       vertices: []
       indices: 
       edges: []
@@ -426,10 +369,10 @@ TextureImporter:
       name: CharMov0_11
       rect:
         serializedVersion: 2
-        x: 32
-        y: 80
-        width: 32
-        height: 51
+        x: 192
+        y: 48
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,8 +380,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4be2f2b5bed93d830800000000000000
-      internalID: 4094790120382607028
+      spriteID: 53c59eae812859a10800000000000000
+      internalID: 1915580260048002101
       vertices: []
       indices: 
       edges: []
@@ -447,10 +390,10 @@ TextureImporter:
       name: CharMov0_12
       rect:
         serializedVersion: 2
-        x: 64
-        y: 80
-        width: 32
-        height: 51
+        x: 0
+        y: 0
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,8 +401,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c47e3f806323aac0800000000000000
-      internalID: -3845190759217204025
+      spriteID: be8a2a6d0b14d51e0800000000000000
+      internalID: -2207536014570641173
       vertices: []
       indices: 
       edges: []
@@ -468,10 +411,10 @@ TextureImporter:
       name: CharMov0_13
       rect:
         serializedVersion: 2
-        x: 96
-        y: 80
-        width: 32
-        height: 51
+        x: 64
+        y: 0
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -479,8 +422,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a575c4687f48c79f0800000000000000
-      internalID: -469354062508435622
+      spriteID: 2167e9c3195802880800000000000000
+      internalID: -8637757226462841326
       vertices: []
       indices: 
       edges: []
@@ -490,9 +433,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 80
-        width: 32
-        height: 51
+        y: 0
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,8 +443,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb37ed9f2897891a0800000000000000
-      internalID: -6802553633698319428
+      spriteID: b4cbf6d23783d1a70800000000000000
+      internalID: 8799251314286509131
       vertices: []
       indices: 
       edges: []
@@ -510,10 +453,10 @@ TextureImporter:
       name: CharMov0_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 29
-        width: 32
-        height: 51
+        x: 192
+        y: 0
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,20 +464,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baf759c95cce2d110800000000000000
-      internalID: 1284349177233768363
+      spriteID: b28974ef4086dbdb0800000000000000
+      internalID: -4774545659287594965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharMov0_16
+      name: CharMov0_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 29
-        width: 32
-        height: 51
+        x: 0
+        y: 144
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -542,20 +485,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2b8cc7f90727ea90800000000000000
-      internalID: -7284810948482921682
+      spriteID: ae46a09682b685790800000000000000
+      internalID: -7541159754726742806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharMov0_17
+      name: CharMov0_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 29
-        width: 32
-        height: 51
+        y: 144
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -563,41 +506,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 555fa9bd8afcaade0800000000000000
-      internalID: -1321015216533998251
+      spriteID: 519d9a10094d369e0800000000000000
+      internalID: -1629224925209700075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharMov0_18
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 29
-        width: 32
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1168ca7beaa1b89a0800000000000000
-      internalID: -6229856321828780527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharMov0_19
+      name: CharMov0_2
       rect:
         serializedVersion: 2
         x: 128
-        y: 29
-        width: 32
-        height: 51
+        y: 144
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -605,8 +527,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0e20d8794abb8910800000000000000
-      internalID: 1840769697433267726
+      spriteID: 8e3bdcdb499453fc0800000000000000
+      internalID: -3515823030904441880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharMov0_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d1690ef1910c600800000000000000
+      internalID: 486416384458628469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharMov0_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0048031967dc5fe0800000000000000
+      internalID: -1198846554496548850
       vertices: []
       indices: 
       edges: []
