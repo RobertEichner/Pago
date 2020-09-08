@@ -3,25 +3,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestManager : MonoBehaviour
+public sealed class QuestManager
 {
-    private List<Quest> quests = new List<Quest>();
+    private static QuestManager instance = null;
 
-    [SerializeField] private Quest testQuest = null;
-    private void Awake()
+    public static QuestManager Instance
     {
-        AddQuest(testQuest);
-    }
-
-    private void Update()
-    {
-        foreach (var q in quests)
+        get
         {
-            if(!q.IsDone)
-                q.Task.CheckTask();
+            if (instance==null)
+            {
+                instance = new QuestManager();
+            }
+            return instance;
         }
     }
 
+    private List<Quest> quests = new List<Quest>();
+
+    private QuestManager()
+    {
+        
+    }
+    
+    
     public bool HasQuest(Quest q)
     {
         return quests.Find(item => q == item);
@@ -41,12 +46,15 @@ public class QuestManager : MonoBehaviour
         return q.IsDone;
     }
 
-    public void FinishQuest(Quest q)
+    public bool FinishQuest(Quest q)
     {
         if (IsQuestDone(q))
         {
             quests.Remove(q);
             q.Task.EndTask();
+            return true;
         }
+
+        return false;
     }
 }

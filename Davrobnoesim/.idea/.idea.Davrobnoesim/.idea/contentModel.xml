@@ -10,9 +10,7 @@
       <e p="Assets" t="Include">
         <e p="_Game" t="Include">
           <e p="Scripts" t="Include">
-            <e p="ChestDatabase" t="Include">
-              <e p="KisteSave.cs" t="Include" />
-            </e>
+            <e p="AnimatedTile.cs" t="Include" />
             <e p="DayNightCycle" t="Include">
               <e p="Clock.cs" t="Include" />
             </e>
@@ -28,22 +26,19 @@
               <e p="IDamagable.cs" t="Include" />
               <e p="IInteractable.cs" t="Include" />
             </e>
-            <e p="ItemAbilities" t="Include">
-              <e p="AbillitiesScripts" t="Include">
-                <e p="AddGold.cs" t="Include" />
-                <e p="DealDamageSword.cs" t="Include" />
-                <e p="HealHealth.cs" t="Include" />
-                <e p="ItemAbility.cs" t="Include" />
-              </e>
-            </e>
             <e p="Logic" t="Include">
               <e p="BridgeLogic.cs" t="Include" />
+              <e p="DialogLogic" t="Include">
+                <e p="DialogSave.cs" t="Include" />
+                <e p="NormalText.cs" t="Include" />
+                <e p="NpcDialog.cs" t="Include" />
+                <e p="QuestTextChecker.cs" t="Include" />
+                <e p="QuestTextGiver.cs" t="Include" />
+                <e p="State.cs" t="Include" />
+              </e>
               <e p="EnemyLogic" t="Include">
                 <e p="EnemyCollAvoid.cs" t="Include" />
                 <e p="EnemySimple.cs" t="Include" />
-                <e p="State.cs" t="Include" />
-                <e p="StateMachine.cs" t="Include" />
-                <e p="Transition.cs" t="Include" />
               </e>
               <e p="GoldLogic" t="Include">
                 <e p="PlayerGold.cs" t="Include" />
@@ -59,10 +54,17 @@
               </e>
               <e p="ItemEnviromentLogic" t="Include">
                 <e p="Kiste.cs" t="Include" />
+                <e p="KisteSave.cs" t="Include" />
                 <e p="SpawnerOnDestroy.cs" t="Include" />
                 <e p="Zerstörbar.cs" t="Include" />
               </e>
               <e p="ItemLogic" t="Include">
+                <e p="AbillitiesScripts" t="Include">
+                  <e p="AddGold.cs" t="Include" />
+                  <e p="DealDamageSword.cs" t="Include" />
+                  <e p="HealHealth.cs" t="Include" />
+                  <e p="ItemAbility.cs" t="Include" />
+                </e>
                 <e p="Item.cs" t="Include" />
                 <e p="ItemPrefab.cs" t="Include" />
                 <e p="UIItem.cs" t="Include" />
@@ -74,11 +76,15 @@
                 <e p="PlayerMovementControlls.cs" t="Include" />
               </e>
               <e p="QuestLogic" t="Include">
-                <e p="EnemyTask.cs" t="Include" />
-                <e p="OnDestroyEvent.cs" t="Include" />
                 <e p="Quest.cs" t="Include" />
                 <e p="QuestManager.cs" t="Include" />
-                <e p="QuestTask.cs" t="Include" />
+                <e p="QuestTasksScripts" t="Include">
+                  <e p="EnemyTask.cs" t="Include" />
+                  <e p="EnemyType.cs" t="Include" />
+                  <e p="ItemCheckTask.cs" t="Include" />
+                  <e p="OnDestroyEvent.cs" t="Include" />
+                  <e p="QuestTask.cs" t="Include" />
+                </e>
               </e>
             </e>
             <e p="SceneManagement" t="Include">

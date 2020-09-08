@@ -33,6 +33,11 @@ public class Inventory : MonoBehaviour
         return null;
     }
 
+    public bool HasItem(Item item)
+    {
+        return itemsInInv.ContainsValue(item);
+    }
+
     public Item[] GetItemArray()
     {
         Item[] itemList = new Item[maxItemSlots];
