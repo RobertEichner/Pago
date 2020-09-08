@@ -10,7 +10,7 @@ public class ItemCheckTask : QuestTask
     private Inventory[] inventories = null;
     public override bool CheckTaskDone()
     {
-        if (itemToCheck == null)
+        if (inventories == null)
             return false;
         
         foreach (var inventory in inventories)

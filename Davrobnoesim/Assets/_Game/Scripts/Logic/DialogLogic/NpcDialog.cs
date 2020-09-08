@@ -102,7 +102,7 @@ public class NpcDialog : MonoBehaviour, IInteractable
                 return;
             }
             
-            if (stateForChoices is QuestTextChecker checkStat)
+            if (stateForChoices is DialogToFinish checkStat)
             {
                 if (!checkStat.IsDone)
                 {

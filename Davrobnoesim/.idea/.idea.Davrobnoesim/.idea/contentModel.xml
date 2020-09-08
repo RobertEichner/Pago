@@ -14,11 +14,6 @@
             <e p="DayNightCycle" t="Include">
               <e p="Clock.cs" t="Include" />
             </e>
-            <e p="DialogueSystem" t="Include">
-              <e p="Dialogue.cs" t="Include" />
-              <e p="DialogueManager.cs" t="Include" />
-              <e p="DialogueTrigger.cs" t="Include" />
-            </e>
             <e p="FindPlayerScript.cs" t="Include" />
             <e p="FollowMousePosition.cs" t="Include" />
             <e p="Interfaces" t="Include">
@@ -30,8 +25,11 @@
               <e p="BridgeLogic.cs" t="Include" />
               <e p="DialogLogic" t="Include">
                 <e p="DialogSave.cs" t="Include" />
+                <e p="DialogToFinish.cs" t="Include" />
+                <e p="ItemGiver.cs" t="Include" />
                 <e p="NormalText.cs" t="Include" />
                 <e p="NpcDialog.cs" t="Include" />
+                <e p="QuestFinisher.cs" t="Include" />
                 <e p="QuestTextChecker.cs" t="Include" />
                 <e p="QuestTextGiver.cs" t="Include" />
                 <e p="State.cs" t="Include" />
