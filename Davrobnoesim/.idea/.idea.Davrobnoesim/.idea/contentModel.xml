@@ -36,6 +36,7 @@
               </e>
               <e p="EnemyLogic" t="Include">
                 <e p="EnemyCollAvoid.cs" t="Include" />
+                <e p="EnemyPlant.cs" t="Include" />
                 <e p="EnemySimple.cs" t="Include" />
               </e>
               <e p="GoldLogic" t="Include">
