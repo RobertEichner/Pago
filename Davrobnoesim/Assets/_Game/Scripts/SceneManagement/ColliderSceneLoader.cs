@@ -10,7 +10,7 @@ public class ColliderSceneLoader : MonoBehaviour
     [SerializeField] private float x, y;
     private static int levelToLoad;
     private static float posX, posY;
-
+    private float localTimeScale = 0;
 
     public Animator animator;
     
@@ -18,6 +18,7 @@ public class ColliderSceneLoader : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            other.GetComponent<PlayerMovement>().SetCanMove(false);
             levelToLoad = scene;
             posX = x;
             posY = y;
@@ -36,6 +37,7 @@ public class ColliderSceneLoader : MonoBehaviour
     private void OnLevelWasLoaded()
     {
         GameObject player = GameObject.FindWithTag("Player");
+        player.GetComponent<PlayerMovement>().SetCanMove(true);
         player.transform.position = new Vector2(posX, posY);
     }
 }
