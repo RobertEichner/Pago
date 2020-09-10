@@ -55,6 +55,7 @@ public class PlayerHealth : MonoBehaviour, IDamagable
 
     private void Death()
     {
-       
+        Fading fad = GameObject.Find("Transition").GetComponent<Fading>();
+        fad.StartTrans(10,-48, gameObject, 3);
     }
 }

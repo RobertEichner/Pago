@@ -10,7 +10,6 @@ public class ColliderSceneLoader : MonoBehaviour
     [SerializeField] private float x, y;
     private static int levelToLoad;
     private static float posX, posY;
-    private float localTimeScale = 0;
 
     public Animator animator;
     
