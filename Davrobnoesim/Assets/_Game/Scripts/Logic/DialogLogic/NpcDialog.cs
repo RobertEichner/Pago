@@ -24,7 +24,6 @@ public class NpcDialog : MonoBehaviour, IInteractable
     private void Awake()
     {
         textBox = GameObject.FindWithTag("DialogBox");
-        textBox.SetActive(false);
         textBox.TryGetComponent(out cg);
         //GameObject.FindWithTag("Player").TryGetComponent(out qm);
         //qm = QuestManager.Instance;
