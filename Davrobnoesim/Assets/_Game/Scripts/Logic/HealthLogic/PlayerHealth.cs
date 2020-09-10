@@ -29,6 +29,8 @@ public class PlayerHealth : MonoBehaviour, IDamagable
                 MaxHealth = maxHealth
             });
          
+            if(currentHealth <= 0)
+                Death();
         }
     }
 
@@ -49,5 +51,10 @@ public class PlayerHealth : MonoBehaviour, IDamagable
     {
         ChangeHealth(-amount);
         Instantiate(partSys, transform.position, Quaternion.identity, transform);
+    }
+
+    private void Death()
+    {
+       
     }
 }

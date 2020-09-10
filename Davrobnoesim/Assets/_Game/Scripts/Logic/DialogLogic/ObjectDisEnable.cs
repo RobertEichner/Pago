@@ -8,11 +8,12 @@ public class ObjectDisEnable : State
 
     private void OnEnable()
     {
-        man = GameObject.Find("EnableDisableManager").GetComponent<EnDisManager>();
+        //man = GameObject.Find("EnableDisableManager").GetComponent<EnDisManager>();
     }
 
     public override void StoryEvent()
     {
+        man = GameObject.Find("EnableDisableManager").GetComponent<EnDisManager>();
         man.SwitchStates(true);
     }
 
