@@ -15,5 +15,5 @@ MonoBehaviour:
   isAnchor: 0
   storyText: Gebe Quest
   nextStates:
-  - {fileID: 11400000, guid: a829ad63a0065ed408335354656db6c1, type: 2}
-  quest: {fileID: 11400000, guid: cc5141cbe4e2ede41a2923bb6350c8a0, type: 2}
+  - {fileID: 11400000, guid: b9a0d60e4b4dd414dbdc776b27ea902f, type: 2}
+  quest: {fileID: 11400000, guid: a207b89c236ba42439799024600991b5, type: 2}

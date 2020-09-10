@@ -15,5 +15,5 @@ MonoBehaviour:
   isAnchor: 0
   storyText: HallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooeHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooeHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooeHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooe
   nextStates:
-  - {fileID: 11400000, guid: a20cc868e1a0b554988b49770401d7cf, type: 2}
+  - {fileID: 11400000, guid: 5799d89b6ef35ca4d95c473210a72c50, type: 2}
   - {fileID: 11400000, guid: 9b7c3f59a3b32cd4b8180a71e6381afc, type: 2}

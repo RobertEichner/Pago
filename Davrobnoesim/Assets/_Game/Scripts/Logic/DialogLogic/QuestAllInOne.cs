@@ -2,12 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[CreateAssetMenu(menuName = "Dialog/QuestAllInOne")]
 public class QuestAllInOne : State
 {
     private State stateToChose = null;
-    private bool hasQuest = false;
-    
+
     [SerializeField] private QuestTextGiver giveQuest = null;
     [SerializeField] private QuestTextChecker checkQuest = null;
     [SerializeField] private QuestFinisher finishQuest = null;
@@ -21,5 +20,11 @@ public class QuestAllInOne : State
 
     public override void StoryEvent()
     {
+        stateToChose = giveQuest;
+
+        if (checkQuest.CanBeDone())
+            stateToChose = checkQuest;
+        if (finishQuest.CanBeDone())
+            stateToChose = finishQuest;
     }
 }

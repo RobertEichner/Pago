@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7aec2e5ac98234f489f7729a4823c466, type: 3}
-  m_Name: ig
+  m_Script: {fileID: 11500000, guid: 6da311bbeef3bea418b5159dacd36abc, type: 3}
+  m_Name: testQuest
   m_EditorClassIdentifier: 
-  isAnchor: 0
-  storyText: Hier nimm das
-  nextStates:
-  - {fileID: 11400000, guid: b9a0d60e4b4dd414dbdc776b27ea902f, type: 2}
-  item: {fileID: 11400000, guid: b815c3c53e8bd6e4fb512eec7bfdb5ab, type: 2}
+  name: 
+  description: 
+  task: {fileID: 11400000, guid: e10477800860bb94eb74dfb75ce17308, type: 2}
