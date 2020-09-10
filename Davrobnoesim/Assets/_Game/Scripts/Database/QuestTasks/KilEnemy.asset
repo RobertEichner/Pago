@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7b7683dad3917a47a962791568d20bf, type: 3}
   m_Name: KilEnemy
   m_EditorClassIdentifier: 
-  typeToCheck: 0
+  typeToCheck: 1
   enemiesToKill: 1

@@ -10,4 +10,9 @@ public class ItemGiver : DialogToFinish
         Inventory inv = GameObject.FindWithTag("Player").GetComponent<Inventory>();
         isDone = inv.GiveItem(item);
     }
+
+    public override bool CanBeDone()
+    {
+        return true;
+    }
 }

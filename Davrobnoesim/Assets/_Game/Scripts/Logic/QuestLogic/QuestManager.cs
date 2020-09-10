@@ -45,6 +45,7 @@ public sealed class QuestManager
     {
         return q.IsDone;
     }
+    
 
     public bool FinishQuest(Quest q)
     {

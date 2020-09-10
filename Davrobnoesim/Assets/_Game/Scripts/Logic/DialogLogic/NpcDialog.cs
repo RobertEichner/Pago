@@ -105,8 +105,7 @@ public class NpcDialog : MonoBehaviour, IInteractable
             {
                 if (!checkStat.IsDone)
                 {
-                    currentStates.Enqueue(stateForChoices); 
-                    StartStory();
+                    SwitchView();
                     return;
                 } 
             }

@@ -10,4 +10,9 @@ public class QuestTextChecker : DialogToFinish
     {
         isDone = QuestManager.Instance.HasQuest(quest);
     }
+
+    public override bool CanBeDone()
+    {
+        return QuestManager.Instance.HasQuest(quest);
+    }
 }
