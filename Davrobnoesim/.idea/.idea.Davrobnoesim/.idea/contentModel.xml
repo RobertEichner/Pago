@@ -26,6 +26,7 @@
               <e p="DialogLogic" t="Include">
                 <e p="DialogSave.cs" t="Include" />
                 <e p="DialogToFinish.cs" t="Include" />
+                <e p="DynamicText.cs" t="Include" />
                 <e p="EnDisManager.cs" t="Include" />
                 <e p="EnDisSave.cs" t="Include" />
                 <e p="ItemGiver.cs" t="Include" />

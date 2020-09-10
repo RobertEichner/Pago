@@ -10,12 +10,12 @@ public abstract class State : ScriptableObject
     [SerializeField] private State[] nextStates;
     public bool IsAnchor => isAnchor;
     
-    public string GetStateStory()
+    public virtual string GetStateStory()
     {
         return storyText;
     }
 
-    public State[] GetNextStates()
+    public virtual State[] GetNextStates()
     {
         return nextStates;
     }
