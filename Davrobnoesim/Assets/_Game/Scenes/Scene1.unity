@@ -8845,6 +8845,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: killer bee_0
       objectReference: {fileID: 0}
+    - target: {fileID: 8938534789740253651, guid: be319a2fff28f5146abf8616bcbccf23,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be319a2fff28f5146abf8616bcbccf23, type: 3}
 --- !u!1 &709794826 stripped
@@ -9405,6 +9410,91 @@ MonoBehaviour:
   startState: {fileID: 11400000, guid: 3eaff6f8ab974074ba1a33ba52b54e5d, type: 2}
   cellSizeX: 1200
   cellSizeY: 200
+--- !u!1001 &4460622554093688248
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4460622553328277732, guid: 798985c358f41ec4a9915acff9a46079,
+        type: 3}
+      propertyPath: m_Name
+      value: EnableDisableManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460622553328277733, guid: 798985c358f41ec4a9915acff9a46079,
+        type: 3}
+      propertyPath: toEnable.Array.data[0]
+      value: 
+      objectReference: {fileID: 709794826}
+    - target: {fileID: 4460622553328277733, guid: 798985c358f41ec4a9915acff9a46079,
+        type: 3}
+      propertyPath: toDisable.Array.data[0]
+      value: 
+      objectReference: {fileID: 1191114053659889085}
+    - target: {fileID: 4460622553328277733, guid: 798985c358f41ec4a9915acff9a46079,
+        type: 3}
+      propertyPath: save
+      value: 
+      objectReference: {fileID: 11400000, guid: a091966b122f6034387f82d00d19f0a1,
+        type: 2}
+    - target: {fileID: 4460622553328277734, guid: 798985c358f41ec4a9915acff9a46079,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.072311
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460622553328277734, guid: 798985c358f41ec4a9915acff9a46079,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.1533694
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460622553328277734, guid: 798985c358f41ec4a9915acff9a46079,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -35.57617
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460622553328277734, guid: 798985c358f41ec4a9915acff9a46079,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460622553328277734, guid: 798985c358f41ec4a9915acff9a46079,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460622553328277734, guid: 798985c358f41ec4a9915acff9a46079,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460622553328277734, guid: 798985c358f41ec4a9915acff9a46079,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460622553328277734, guid: 798985c358f41ec4a9915acff9a46079,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460622553328277734, guid: 798985c358f41ec4a9915acff9a46079,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460622553328277734, guid: 798985c358f41ec4a9915acff9a46079,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460622553328277734, guid: 798985c358f41ec4a9915acff9a46079,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 798985c358f41ec4a9915acff9a46079, type: 3}
 --- !u!1001 &4598865211988670406
 PrefabInstance:
   m_ObjectHideFlags: 0

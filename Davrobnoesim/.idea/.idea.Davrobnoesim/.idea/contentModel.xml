@@ -26,14 +26,18 @@
               <e p="DialogLogic" t="Include">
                 <e p="DialogSave.cs" t="Include" />
                 <e p="DialogToFinish.cs" t="Include" />
+                <e p="EnDisManager.cs" t="Include" />
+                <e p="EnDisSave.cs" t="Include" />
                 <e p="ItemGiver.cs" t="Include" />
                 <e p="NormalText.cs" t="Include" />
                 <e p="NpcDialog.cs" t="Include" />
+                <e p="ObjectDisEnable.cs" t="Include" />
                 <e p="QuestFinisher.cs" t="Include" />
                 <e p="QuestTextChecker.cs" t="Include" />
                 <e p="QuestTextGiver.cs" t="Include" />
                 <e p="State.cs" t="Include" />
               </e>
+              <e p="DisOnStart.cs" t="Include" />
               <e p="EnemyLogic" t="Include">
                 <e p="EnemyCollAvoid.cs" t="Include" />
                 <e p="EnemyPlant.cs" t="Include" />

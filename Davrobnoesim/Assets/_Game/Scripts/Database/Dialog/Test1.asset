@@ -16,4 +16,4 @@ MonoBehaviour:
   storyText: HallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooeHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooeHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooeHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooHallooooe
   nextStates:
   - {fileID: 11400000, guid: a20cc868e1a0b554988b49770401d7cf, type: 2}
-  - {fileID: 11400000, guid: 9e2d5cca97d2caa47b88423afd527f3a, type: 2}
+  - {fileID: 11400000, guid: 9b7c3f59a3b32cd4b8180a71e6381afc, type: 2}
