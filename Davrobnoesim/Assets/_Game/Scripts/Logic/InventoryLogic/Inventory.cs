@@ -8,7 +8,7 @@ public class Inventory : MonoBehaviour
 {
     private Dictionary<int, Item> itemsInInv = new Dictionary<int, Item>();
     [SerializeField] private UIInventory uIInventory = null;
-    [SerializeField] private int maxItemSlots = 1;
+    [SerializeField] private int maxItemSlots = 16;
     private GameObject owner;
     public event EventHandler<ItemChangeArgs> OnItemChanged;
 
