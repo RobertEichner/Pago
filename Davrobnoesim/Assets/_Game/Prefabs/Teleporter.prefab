@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 139129636315268907}
   - component: {fileID: 139129636315267286}
   m_Layer: 13
-  m_Name: Kiste (2)
+  m_Name: Teleporter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
