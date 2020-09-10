@@ -15,7 +15,6 @@ public class NpcDialog : MonoBehaviour, IInteractable
     private Transform targetPos = null;
     [SerializeField] private DialogSave startState = null;
     private Queue<State> currentStates = new Queue<State>();
-    //private QuestManager qm;
     private Button SingleButtonText = null;
     private GridLayoutGroup cg = null;
     [SerializeField] private float cellSizeX = 1200;
@@ -23,10 +22,10 @@ public class NpcDialog : MonoBehaviour, IInteractable
 
     private void Awake()
     {
-        textBox = GameObject.FindWithTag("DialogBox");
-        textBox.TryGetComponent(out cg);
-        //GameObject.FindWithTag("Player").TryGetComponent(out qm);
-        //qm = QuestManager.Instance;
+        GameObject playerUI = GameObject.Find("PlayerUI");
+        cg = playerUI.GetComponentInChildren<GridLayoutGroup>(true);
+        textBox = cg.gameObject;
+        //textBox.TryGetComponent(out cg);
         SingleButtonText = Resources.Load<Button>("Prefabs/ButtonSingle");
         currentStates.Enqueue(startState.StartState);
     }
