@@ -7,4 +7,6 @@ public abstract class DialogToFinish : State
     protected bool isDone = false;
 
     public bool IsDone => isDone;
+    
+    public abstract bool CanBeDone();
 }

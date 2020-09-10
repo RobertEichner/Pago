@@ -10,4 +10,9 @@ public class QuestFinisher : DialogToFinish
     {
         isDone = QuestManager.Instance.FinishQuest(quest);
     }
+
+    public override bool CanBeDone()
+    {
+        return QuestManager.Instance.IsQuestDone(quest);
+    }
 }
