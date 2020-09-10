@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deaf35f82ce4bee499a635c57b437e93, type: 3}
+  m_Name: QuestFinisher
+  m_EditorClassIdentifier: 
+  isAnchor: 0
+  storyText: "Doc:\n\nI used to make strong potions from goldblossom roots. However,
+    I'll take a while \tuntil I get a new delivery. It's become pretty rare, since
+    this weird looking bear \tappeared in the woods. If you find some by any chance,
+    bring it to me and I'll repay \tyou."
+  nextStates:
+  - {fileID: 11400000, guid: 375a0918ac6de9e4aa21cf15c7a9c03b, type: 2}
+  quest: {fileID: 11400000, guid: fc088fdef21a84543a619809d7c91ba4, type: 2}
