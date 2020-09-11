@@ -94,8 +94,9 @@
               </e>
             </e>
             <e p="SceneManagement" t="Include">
+              <e p="ChangeScenes.cs" t="Include" />
               <e p="ColliderSceneLoader.cs" t="Include" />
-              <e p="PlayerDestination.cs" t="Include" />
+              <e p="Fading.cs" t="Include" />
               <e p="SceneLoader.cs" t="Include" />
             </e>
           </e>

@@ -13,6 +13,9 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 lastFacedDirection = Vector2.zero;
     public Vector2 Direction => lastFacedDirection.normalized;
 
+    private bool canMove = true;
+    
+
     [SerializeField] private float speed = 4f;
 
     private Animator anim;
@@ -38,8 +41,18 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnMovement(InputValue value)
     {
+        if (!canMove)
+        {
+            direction = Vector2.zero;
+            return;
+        }
         direction = value.Get<Vector2>();
         if (!direction.Equals(Vector2.zero))
             lastFacedDirection = direction;
+    }
+
+    public void SetCanMove(bool b)
+    {
+        canMove = b;
     }
 }

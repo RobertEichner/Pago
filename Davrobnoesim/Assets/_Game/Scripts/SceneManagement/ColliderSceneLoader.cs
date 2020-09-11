@@ -11,13 +11,13 @@ public class ColliderSceneLoader : MonoBehaviour
     private static int levelToLoad;
     private static float posX, posY;
 
-
     public Animator animator;
     
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
+            other.GetComponent<PlayerMovement>().SetCanMove(false);
             levelToLoad = scene;
             posX = x;
             posY = y;
@@ -36,6 +36,7 @@ public class ColliderSceneLoader : MonoBehaviour
     private void OnLevelWasLoaded()
     {
         GameObject player = GameObject.FindWithTag("Player");
+        player.GetComponent<PlayerMovement>().SetCanMove(true);
         player.transform.position = new Vector2(posX, posY);
     }
 }

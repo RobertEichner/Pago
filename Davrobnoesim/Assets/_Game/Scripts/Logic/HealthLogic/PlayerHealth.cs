@@ -55,6 +55,10 @@ public class PlayerHealth : MonoBehaviour, IDamagable
 
     private void Death()
     {
-       
+        IChangeGold goldMan;
+        TryGetComponent<IChangeGold>(out goldMan);
+        goldMan.ChangeGold(-10);
+        Fading fad = GameObject.Find("Transition").GetComponent<Fading>();
+        fad.StartTrans(10,-48, gameObject, 3);
     }
 }
