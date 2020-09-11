@@ -37588,6 +37588,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Transition
       objectReference: {fileID: 0}
+    - target: {fileID: 966501744766217714, guid: 70ab0999c54ccf84d8deede411c4efed,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 966501744766217718, guid: 70ab0999c54ccf84d8deede411c4efed,
         type: 3}
       propertyPath: m_LocalPosition.x

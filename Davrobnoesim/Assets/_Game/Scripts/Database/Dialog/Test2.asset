@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Test2
   m_EditorClassIdentifier: 
   isAnchor: 0
-  storyText: 2
+  storyText: Alles fertig
   nextStates:
   - {fileID: 11400000, guid: b9a0d60e4b4dd414dbdc776b27ea902f, type: 2}
