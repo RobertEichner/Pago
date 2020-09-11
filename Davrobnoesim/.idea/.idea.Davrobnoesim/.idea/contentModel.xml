@@ -25,6 +25,7 @@
             <e p="Logic" t="Include">
               <e p="BridgeLogic.cs" t="Include" />
               <e p="DialogLogic" t="Include">
+                <e p="DialogLoadScene.cs" t="Include" />
                 <e p="DialogSave.cs" t="Include" />
                 <e p="DialogToFinish.cs" t="Include" />
                 <e p="EnDisManager.cs" t="Include" />
