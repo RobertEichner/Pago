@@ -8571,8 +8571,14 @@ PrefabInstance:
     - target: {fileID: 6513302425874350039, guid: 8cb53148007753740a43dff20565d857,
         type: 3}
       propertyPath: triggerToDo
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6513302425874350039, guid: 8cb53148007753740a43dff20565d857,
+        type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 80e942d8010bb46478b2221c4da04617,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cb53148007753740a43dff20565d857, type: 3}
 --- !u!1 &587026533

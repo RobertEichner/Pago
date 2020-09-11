@@ -70,6 +70,7 @@
                   <e p="DealDamageSword.cs" t="Include" />
                   <e p="HealHealth.cs" t="Include" />
                   <e p="ItemAbility.cs" t="Include" />
+                  <e p="ItemDialogTrigger.cs" t="Include" />
                 </e>
                 <e p="Item.cs" t="Include" />
                 <e p="ItemPrefab.cs" t="Include" />
