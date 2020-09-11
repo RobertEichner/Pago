@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(TextMeshProUGUI))]
 public class UIGold : MonoBehaviour
@@ -25,11 +26,13 @@ public class UIGold : MonoBehaviour
     {
         UpdateGoldUI(playerGold.CurrentGold, playerGold.MaxGold);
         playerGold.OnGoldChanged += HandleGoldChange;
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void OnDisable()
     {
         playerGold.OnGoldChanged -= HandleGoldChange;
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     private void HandleGoldChange(object sender, PlayerGold.GoldChangedArgs args)
@@ -41,4 +44,10 @@ public class UIGold : MonoBehaviour
     {
         text.text = currentGold.ToString();
     }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        UpdateGoldUI(playerGold.CurrentGold, playerGold.MaxGold);
+    }
+
 }

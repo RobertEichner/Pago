@@ -14,7 +14,7 @@ public class ChangeScenes : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Fading fad = GameObject.Find("Transition").GetComponent<Fading>();
-            fad.StartTrans(x,y, other.gameObject, scene);
+            fad.StartTrans(x,y, other.gameObject, scene, null);
         }
     }
 }

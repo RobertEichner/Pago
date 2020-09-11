@@ -5816,6 +5816,51 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cameras
       objectReference: {fileID: 0}
+    - target: {fileID: 2845903630732716577, guid: d734928238ed7f74cb3fc0f3db5b8093,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.781523
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845903630732716577, guid: d734928238ed7f74cb3fc0f3db5b8093,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.2201031
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845903630732716577, guid: d734928238ed7f74cb3fc0f3db5b8093,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.1974602
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845903631289962468, guid: d734928238ed7f74cb3fc0f3db5b8093,
+        type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 1172945905}
+    - target: {fileID: 2845903631289962468, guid: d734928238ed7f74cb3fc0f3db5b8093,
+        type: 3}
+      propertyPath: m_StandbyUpdate
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845903631289962468, guid: d734928238ed7f74cb3fc0f3db5b8093,
+        type: 3}
+      propertyPath: m_LookAt
+      value: 
+      objectReference: {fileID: 1172945905}
+    - target: {fileID: 2845903631289962469, guid: d734928238ed7f74cb3fc0f3db5b8093,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.781523
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845903631289962469, guid: d734928238ed7f74cb3fc0f3db5b8093,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.2201031
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845903631289962469, guid: d734928238ed7f74cb3fc0f3db5b8093,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.1974602
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d734928238ed7f74cb3fc0f3db5b8093, type: 3}
 --- !u!1 &705170267 stripped
@@ -38904,6 +38949,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20ad7626cdb667f4cb7c1dd9d58d1e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1172945905 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6893041847189879466, guid: abe1bcfaaeb9c0b4db61df31d57fc4c5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1022858136}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1734775225
 PrefabInstance:
   m_ObjectHideFlags: 0
