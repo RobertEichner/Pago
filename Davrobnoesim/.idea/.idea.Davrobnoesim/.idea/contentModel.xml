@@ -38,6 +38,7 @@
                 <e p="QuestFinisher.cs" t="Include" />
                 <e p="QuestTextChecker.cs" t="Include" />
                 <e p="QuestTextGiver.cs" t="Include" />
+                <e p="RichySpezial.cs" t="Include" />
                 <e p="State.cs" t="Include" />
               </e>
               <e p="DisOnStart.cs" t="Include" />
