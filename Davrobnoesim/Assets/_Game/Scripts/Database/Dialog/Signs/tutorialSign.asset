@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62bf2442bf3399f41a0929aed08fefab, type: 3}
-  m_Name: Test2
+  m_Name: tutorialSign
   m_EditorClassIdentifier: 
   isAnchor: 0
-  storyText: Alles fertig
-  nextStates:
-  - {fileID: 11400000, guid: b9a0d60e4b4dd414dbdc776b27ea902f, type: 2}
+  storyText: 'Pago 10km
+
+    ->'
+  nextStates: []

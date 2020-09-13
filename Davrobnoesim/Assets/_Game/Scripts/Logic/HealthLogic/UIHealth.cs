@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIHealth : MonoBehaviour
@@ -23,23 +24,31 @@ public class UIHealth : MonoBehaviour
 
     private void OnEnable()
     {
-        UpdateGoldUI(playerHealth.CurrentHealth, playerHealth.MaxHealth);
+        UpdateHealthI(playerHealth.CurrentHealth, playerHealth.MaxHealth);
         playerHealth.OnHealthChanged += HandleHealthChange;
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void OnDisable()
     {
         playerHealth.OnHealthChanged -= HandleHealthChange;
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     private void HandleHealthChange(object sender, PlayerHealth.HealthChangedArgs args)
     {
-        UpdateGoldUI(args.CurrentHealth, args.MaxHealth);
+        UpdateHealthI(args.CurrentHealth, args.MaxHealth);
     }
 
-    private void UpdateGoldUI(int currentHealth, int maxHealth)
+    private void UpdateHealthI(int currentHealth, int maxHealth)
     {
         slider.maxValue = maxHealth;
         slider.value = currentHealth;
     }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        UpdateHealthI(playerHealth.CurrentHealth, playerHealth.MaxHealth);
+    }
+
 }

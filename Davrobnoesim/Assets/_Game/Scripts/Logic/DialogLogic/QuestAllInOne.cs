@@ -10,6 +10,7 @@ public class QuestAllInOne : State
     [SerializeField] private QuestTextGiver giveQuest = null;
     [SerializeField] private QuestTextChecker checkQuest = null;
     [SerializeField] private QuestFinisher finishQuest = null;
+    [SerializeField] private State endState = null;
 
     public override State[] GetNextStates()
     {
@@ -26,5 +27,7 @@ public class QuestAllInOne : State
             stateToChose = checkQuest;
         if (finishQuest.CanBeDone())
             stateToChose = finishQuest;
+        if (finishQuest.IsDone)
+            stateToChose = endState;
     }
 }
