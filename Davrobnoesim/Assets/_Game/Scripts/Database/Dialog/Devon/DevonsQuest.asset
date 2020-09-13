@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23eeff246052cf04dae42a87dc96c7b8, type: 3}
+  m_Name: DevonsQuest
+  m_EditorClassIdentifier: 
+  isAnchor: 0
+  storyText: '[Quest]'
+  nextStates: []
+  giveQuest: {fileID: 11400000, guid: 51b5829c35c335f4195595451d983d30, type: 2}
+  checkQuest: {fileID: 11400000, guid: da1a57bad98a4dc429d3e050e4e84d24, type: 2}
+  finishQuest: {fileID: 11400000, guid: 27f8b903e9696ad4e8dd3e4adda224db, type: 2}

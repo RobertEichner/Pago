@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a4d930831b1d9f49a73e11f0904b9c6, type: 3}
+  m_Name: QuestGiver
+  m_EditorClassIdentifier: 
+  isAnchor: 0
+  storyText: 'Devon:
+
+
+    "I would offer you a drink, but you look way too young
+    to consume alcohol. Plus, I''m missing an important delivery. It has been stolen
+    by those filthy bandits. I would look for their hideout, but I''m too depressed
+    by now. Please leave me alone."'
+  nextStates: []
+  quest: {fileID: 11400000, guid: 7e529d6581bef78478fdb92f6289fbbc, type: 2}

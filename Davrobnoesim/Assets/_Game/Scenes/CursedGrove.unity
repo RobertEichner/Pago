@@ -29118,15 +29118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b31cb2ef9f278a45bff9af9709238e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Richy
-    sentences:
-    - '*hic* Its nice here, ain''t it?'
-    - There are many deadly creatures in the woods.
-    - It's dangerous to go alone.
-    - The game developers hid a weapon in the southern part of the woods.
-    - Take it and destroy the bee hive at the waterfall!
-    - It's abandoned, *hic* I swear!
 --- !u!70 &852948211
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -29220,7 +29211,7 @@ GameObject:
   - component: {fileID: 994664130}
   - component: {fileID: 994664129}
   m_Layer: 0
-  m_Name: Richy
+  m_Name: Irena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29235,18 +29226,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 994664128}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b31cb2ef9f278a45bff9af9709238e7, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ffe45fea7d74d44792fb7ee0800de02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Richy
-    sentences:
-    - '*hic* Its nice here, ain''t it?'
-    - There are many deadly creatures in the woods.
-    - It's dangerous to go alone.
-    - The game developers hid a weapon in the southern part of the woods.
-    - Take it and destroy the bee hive at the waterfall!
-    - It's abandoned, *hic* I swear!
+  activeInThisRadius: 4
+  startState: {fileID: 11400000, guid: 0a9afeac90a5e2e4eb63b9b3ffa310d3, type: 2}
+  cellSizeX: 1200
+  cellSizeY: 200
 --- !u!70 &994664130
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -29260,8 +29246,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.017219067, y: 0.32720065}
-  m_Size: {x: 0.4558792, y: 0.665915}
+  m_Offset: {x: -0.017219067, y: -0.4427805}
+  m_Size: {x: 0.4558792, y: 0.60754967}
   m_Direction: 0
 --- !u!212 &994664131
 SpriteRenderer:

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Idle
   m_EditorClassIdentifier: 
   isAnchor: 0
-  storyText: "Doc: \n\n\"Welcome stranger. Do you need anything?\""
+  storyText: "Doctor: \n\n\"Welcome stranger. Do you need anything?\""
   nextStates:
-  - {fileID: 11400000, guid: 0d8f9197f9fdfa64db88acf7d105ff57, type: 2}
+  - {fileID: 11400000, guid: 0f15c5ab4ed8d3042ad862123a256c21, type: 2}
   - {fileID: 11400000, guid: 6c593030a36973a4b9c4315ca0d4c126, type: 2}

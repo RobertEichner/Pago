@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: QuestGiver
   m_EditorClassIdentifier: 
   isAnchor: 0
-  storyText: '[Quest]'
-  nextStates:
-  - {fileID: 11400000, guid: e32da633c21646242a3e0ddae50b390b, type: 2}
-  quest: {fileID: 11400000, guid: fc088fdef21a84543a619809d7c91ba4, type: 2}
+  storyText: 'Doctor:
+
+
+    "I used to make strong potions from goldblossom roots.
+    However, It''ll take a while until I get a new delivery. It''s become pretty
+    rare, since this weird looking bear appeared in the woods. If you find some by
+    any chance, bring it to me and I''ll repay you."'
+  nextStates: []
+  quest: {fileID: 11400000, guid: a355375ef18ca2d4f80c883afd2ec9c3, type: 2}
