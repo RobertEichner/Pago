@@ -102,6 +102,10 @@
               <e p="Fading.cs" t="Include" />
               <e p="SceneLoader.cs" t="Include" />
             </e>
+            <e p="Tutorial" t="Include">
+              <e p="DisableOnExit.cs" t="Include" />
+              <e p="RemoveSword.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Plugins" t="Include">

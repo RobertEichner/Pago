@@ -94,6 +94,12 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public void Clear()
+    {
+        for(int i=0; i<maxItemSlots; i++)
+            RemoveItem(i);
+    }
+
     public void OverrideItem(Item item, int index)
     {
         itemsInInv[index] = item;
