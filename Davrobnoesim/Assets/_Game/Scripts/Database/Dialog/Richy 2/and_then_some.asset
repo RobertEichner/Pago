@@ -9,13 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: deaf35f82ce4bee499a635c57b437e93, type: 3}
-  m_Name: QuestFinisher
+  m_Script: {fileID: 11500000, guid: 62bf2442bf3399f41a0929aed08fefab, type: 3}
+  m_Name: and_then_some
   m_EditorClassIdentifier: 
   isAnchor: 0
-  storyText: 'Elliott:
+  storyText: 'Naiad:
 
 
-    "Thank you."'
-  nextStates: []
-  quest: {fileID: 11400000, guid: a355375ef18ca2d4f80c883afd2ec9c3, type: 2}
+    "... and then some jerk destroyed the nest of those poor
+    bees."'
+  nextStates:
+  - {fileID: 11400000, guid: aeeef8d0bc5144241a473509f36ac73d, type: 2}

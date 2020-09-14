@@ -29098,7 +29098,6 @@ GameObject:
   - component: {fileID: 852948213}
   - component: {fileID: 852948212}
   - component: {fileID: 852948211}
-  - component: {fileID: 852948210}
   m_Layer: 0
   m_Name: Unicorn
   m_TagString: Untagged
@@ -29106,18 +29105,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &852948210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852948209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b31cb2ef9f278a45bff9af9709238e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &852948211
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

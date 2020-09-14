@@ -17,6 +17,7 @@ public class Maze : MonoBehaviour
 
     public void genPath()
     {
+        path.Clear();
         pathLength = 5;
         int[] dir = { };
         int next = 0;

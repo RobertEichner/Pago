@@ -8,7 +8,7 @@ public class Quest: ScriptableObject
     [SerializeField] private string name;
     [SerializeField] private string description;
     [SerializeField] private QuestTask task;
-    private bool isDone = false;
+    [SerializeField] private bool isDone = false;
     public string Name => name;
 
     public string Description => description;
@@ -23,4 +23,9 @@ public class Quest: ScriptableObject
             return isDone;
         }
     }
+    private void OnEnable()
+    {
+        isDone = false;
+    }
 }
+

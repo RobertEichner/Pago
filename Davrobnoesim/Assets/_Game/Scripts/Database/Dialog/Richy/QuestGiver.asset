@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: QuestGiver
   m_EditorClassIdentifier: 
   isAnchor: 0
-  storyText: 'Elliott:
+  storyText: 'Richy:
 
 
-    "You look like a skilled man. I need some hunting goods,
-    but I don''t want to ask Richy. He''s gonna take the whole week to do it. Here''s
-    a list"'
+    "Well... actually there''s something you could help me
+    with. Could you remove the bee hive at the waterfall for me? It''s abandoned
+    *hic* I swear!"'
   nextStates: []
-  quest: {fileID: 11400000, guid: a355375ef18ca2d4f80c883afd2ec9c3, type: 2}
+  quest: {fileID: 11400000, guid: 00345d63b4aa3d045859e4fcd30dcf29, type: 2}

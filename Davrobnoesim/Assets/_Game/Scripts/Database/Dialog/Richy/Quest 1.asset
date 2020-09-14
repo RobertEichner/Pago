@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da311bbeef3bea418b5159dacd36abc, type: 3}
   m_Name: Quest 1
   m_EditorClassIdentifier: 
-  name: Hunting Goods
+  name: The Naiad
   description: 
-  task: {fileID: 11400000, guid: 365bd1d1286dfda4683527b3a6a4a5ad, type: 2}
+  task: {fileID: 11400000, guid: a60c7f38950742a4baa8a352886b6061, type: 2}
+  isDone: 0

@@ -2,7 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+[CreateAssetMenu(menuName = "Dialog/DisEnDialog")]
 public class ObjectDisEnable : State
+
 {
     private EnDisManager man = null;
 

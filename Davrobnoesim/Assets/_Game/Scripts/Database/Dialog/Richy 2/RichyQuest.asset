@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23eeff246052cf04dae42a87dc96c7b8, type: 3}
-  m_Name: DoctorsQuest
+  m_Name: RichyQuest
   m_EditorClassIdentifier: 
   isAnchor: 0
   storyText: '[Quest]'
   nextStates: []
-  giveQuest: {fileID: 11400000, guid: 12f977bcc119b7849bc667b2d8d241ec, type: 2}
-  checkQuest: {fileID: 11400000, guid: 093428c0c5cc30a4db6f3f4fb8bffa4c, type: 2}
-  finishQuest: {fileID: 11400000, guid: 72ceff78eabf5344ab24a7209e3ba5aa, type: 2}
+  giveQuest: {fileID: 11400000, guid: 259e710c18afb0f4a85e69f9baa6435e, type: 2}
+  checkQuest: {fileID: 11400000, guid: c794c031f1d53734da669301cd00ba2f, type: 2}
+  finishQuest: {fileID: 11400000, guid: 8728513e38d5c2c4380427556e3f3bd1, type: 2}
+  endState: {fileID: 0}

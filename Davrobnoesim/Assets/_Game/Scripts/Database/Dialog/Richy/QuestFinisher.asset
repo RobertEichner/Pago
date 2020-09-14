@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: QuestFinisher
   m_EditorClassIdentifier: 
   isAnchor: 0
-  storyText: 'Elliott:
+  storyText: 'Richy:
 
 
-    "Thank you."'
-  nextStates: []
-  quest: {fileID: 11400000, guid: a355375ef18ca2d4f80c883afd2ec9c3, type: 2}
+    "Great, you did it! Well yeah... maybe there were still
+    some killer bees inside. *hic* See, I would have done it by myself but I have
+    an old war injury, and..."'
+  nextStates:
+  - {fileID: 11400000, guid: fbb300c656ffc154999ad897452bf071, type: 2}
+  quest: {fileID: 11400000, guid: 00345d63b4aa3d045859e4fcd30dcf29, type: 2}

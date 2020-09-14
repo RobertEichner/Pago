@@ -9,9 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6da311bbeef3bea418b5159dacd36abc, type: 3}
-  m_Name: Quest 1
+  m_Script: {fileID: 11500000, guid: 675d76a57f75d33499922cb64c15d08b, type: 3}
+  m_Name: QuestChecker
   m_EditorClassIdentifier: 
-  name: Hunting Goods
-  description: 
-  task: {fileID: 11400000, guid: 365bd1d1286dfda4683527b3a6a4a5ad, type: 2}
+  isAnchor: 0
+  storyText: 'Richy:
+
+
+    "I know you can do it! You''ll find it at the waterfall!"'
+  nextStates: []
+  quest: {fileID: 11400000, guid: 00345d63b4aa3d045859e4fcd30dcf29, type: 2}
