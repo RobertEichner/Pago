@@ -18,3 +18,4 @@ MonoBehaviour:
   giveQuest: {fileID: 11400000, guid: 793e016fcf88bce459d71a4fb1e619e5, type: 2}
   checkQuest: {fileID: 11400000, guid: 093428c0c5cc30a4db6f3f4fb8bffa4c, type: 2}
   finishQuest: {fileID: 11400000, guid: 72ceff78eabf5344ab24a7209e3ba5aa, type: 2}
+  endState: {fileID: 11400000, guid: 5ef38903ab84cee4ab7a5215e98479f9, type: 2}
