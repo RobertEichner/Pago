@@ -12,6 +12,8 @@ public class Fading : MonoBehaviour
     private Animator anim = null;
     private PlayerMovement pm = null;
     private Action onDeath = null;
+    private bool loadScene = true;
+    
 
     private void Awake()
     {
@@ -40,19 +42,32 @@ public class Fading : MonoBehaviour
     
     public void OnFadeComplete()
     {
-        SceneManager.LoadScene(nscene);
-        onDeath?.Invoke();
+        if (loadScene)
+        {
+            SceneManager.LoadScene(nscene);
+            onDeath?.Invoke();
+        }
+
+        loadScene = true;
     }
 
     public void StartTrans(float x, float y, GameObject player, int scene, Action onDeath)
     {
+        
         this.onDeath = onDeath;
+        loadScene = true;
         player.TryGetComponent(out pm);
         pm.SetCanMove(false);
         nscene = scene;
         nx = x;
         ny = y;
         this.player = player;
+        anim.SetTrigger("fadeOut");
+    }
+    
+    public void StartTrans(bool changeScene)
+    {
+        loadScene = changeScene;
         anim.SetTrigger("fadeOut");
     }
 }

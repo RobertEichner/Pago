@@ -4,5 +4,5 @@ using UnityEngine;
 
 public enum EnemyType
 {
-    NONE, BEE, BEEHIVE, PLANT, BEAR
+    NONE, BEE, BEEHIVE, PLANT, BEAR, WOLPERTINGER, BANDIT
 }
