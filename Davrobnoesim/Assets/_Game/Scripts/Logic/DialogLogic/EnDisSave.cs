@@ -20,6 +20,6 @@ public class EnDisSave : ScriptableObject
 
     private void OnEnable()
     {
-        //state = IntState.INITIAL;
+        state = IntState.INITIAL;
     }
 }
