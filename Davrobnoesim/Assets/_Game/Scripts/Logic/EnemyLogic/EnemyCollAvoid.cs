@@ -43,10 +43,16 @@ public class EnemyCollAvoid : MonoBehaviour, IDamagable
         var direction =  target.position - transform.position;
         float dist = direction.magnitude;
         
+        
         if(dist > attentionRange)
             return;
 
-        LookAtTarget(direction);
+        //LookAtTarget(direction);
+        
+        anim.SetFloat("xVelocity", direction.x);
+        anim.SetFloat("yVelocity", direction.y);
+        anim.SetFloat("speed", dist);
+        
         if (currentKnockback >= Mathf.Epsilon)
         {
             currentKnockback -= Time.deltaTime;
@@ -99,7 +105,7 @@ public class EnemyCollAvoid : MonoBehaviour, IDamagable
         if(hit.collider.TryGetComponent<IDamagable>(out var tar) && hit.collider != col)
             tar.DealDamage(attackDamage);
         
-        anim.SetTrigger("attack");
+        //anim.SetTrigger("attack");
         canAttack = false;
         StartCoroutine(WaitForAttack());
 
