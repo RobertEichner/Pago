@@ -2186,12 +2186,12 @@ PrefabInstance:
     - target: {fileID: 6893041847189879466, guid: abe1bcfaaeb9c0b4db61df31d57fc4c5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.33
+      value: -18.26
       objectReference: {fileID: 0}
     - target: {fileID: 6893041847189879466, guid: abe1bcfaaeb9c0b4db61df31d57fc4c5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.2
+      value: -19.93
       objectReference: {fileID: 0}
     - target: {fileID: 6893041847189879466, guid: abe1bcfaaeb9c0b4db61df31d57fc4c5,
         type: 3}
@@ -2631,12 +2631,12 @@ PrefabInstance:
     - target: {fileID: 2845903630732716577, guid: d734928238ed7f74cb3fc0f3db5b8093,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.451523
+      value: -30.041523
       objectReference: {fileID: 0}
     - target: {fileID: 2845903630732716577, guid: d734928238ed7f74cb3fc0f3db5b8093,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.420103
+      value: -20.150103
       objectReference: {fileID: 0}
     - target: {fileID: 2845903630732716577, guid: d734928238ed7f74cb3fc0f3db5b8093,
         type: 3}
@@ -2656,12 +2656,12 @@ PrefabInstance:
     - target: {fileID: 2845903631289962469, guid: d734928238ed7f74cb3fc0f3db5b8093,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.451523
+      value: -30.041523
       objectReference: {fileID: 0}
     - target: {fileID: 2845903631289962469, guid: d734928238ed7f74cb3fc0f3db5b8093,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.420103
+      value: -20.150103
       objectReference: {fileID: 0}
     - target: {fileID: 2845903631289962469, guid: d734928238ed7f74cb3fc0f3db5b8093,
         type: 3}
@@ -5541,7 +5541,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: -7308169632179697715, guid: 96da122b8b17a4e4681d8eac42e46f4d, type: 3}
       - {fileID: 7322846707716811392, guid: 96da122b8b17a4e4681d8eac42e46f4d, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 53, y: 22, z: 0}
@@ -55930,7 +55930,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.4990711, y: 0.42347297}
+  m_Offset: {x: 2.4990711, y: 0.5427637}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -55941,7 +55941,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.998165, y: 0.15918654}
+  m_Size: {x: 5.998165, y: 0.07429314}
   m_EdgeRadius: 0
 --- !u!61 &1781871406
 BoxCollider2D:
@@ -55956,7 +55956,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.499502, y: -0.42127168}
+  m_Offset: {x: 2.499502, y: -0.40783155}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -55967,7 +55967,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.9994016, y: 0.15289569}
+  m_Size: {x: 5.9994016, y: 0.17977595}
   m_EdgeRadius: 0
 --- !u!1001 &1788797393
 PrefabInstance:
