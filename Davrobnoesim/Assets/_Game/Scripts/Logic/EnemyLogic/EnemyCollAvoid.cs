@@ -42,10 +42,14 @@ public class EnemyCollAvoid : MonoBehaviour, IDamagable
     {
         var direction =  target.position - transform.position;
         float dist = direction.magnitude;
-        
-        
-        if(dist > attentionRange)
+
+
+        if (dist > attentionRange)
+        {
+            anim.SetFloat("speed", 0);
             return;
+        }
+        
 
         //LookAtTarget(direction);
         
