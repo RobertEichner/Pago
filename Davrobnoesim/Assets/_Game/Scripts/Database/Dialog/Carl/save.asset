@@ -9,11 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fa0bd4d62c4be5409d6eeff3dcacf94, type: 3}
-  m_Name: Suspicious Package 1
+  m_Script: {fileID: 11500000, guid: c051ad558a8887e45a2e913d90e3aa81, type: 3}
+  m_Name: save
   m_EditorClassIdentifier: 
-  id: 30
-  title: Suspicious Package
-  icon: {fileID: 21300000, guid: 3e3058d3dc4b4dd46a11f625559e2c95, type: 3}
-  ability: {fileID: 0}
-  removeAfterUse: 0
+  initialStartState: {fileID: 11400000, guid: 7ec161af13620be4d88ff3fdd167f498, type: 2}

@@ -9,7 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28aa3814f9772714d9a8501768a54a31, type: 3}
-  m_Name: ItemTask
+  m_Script: {fileID: 11500000, guid: 62bf2442bf3399f41a0929aed08fefab, type: 3}
+  m_Name: keep
   m_EditorClassIdentifier: 
-  itemToCheck: {fileID: 11400000, guid: dbf3ac210d8295443ae4a7c5456f018f, type: 2}
+  isAnchor: 0
+  storyText: 'Carl:
+
+
+    "Keep it going."'
+  nextStates: []

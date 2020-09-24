@@ -9,7 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28aa3814f9772714d9a8501768a54a31, type: 3}
-  m_Name: ItemTask
+  m_Script: {fileID: 11500000, guid: 4fa0bd4d62c4be5409d6eeff3dcacf94, type: 3}
+  m_Name: Suspicious Package
   m_EditorClassIdentifier: 
-  itemToCheck: {fileID: 11400000, guid: dbf3ac210d8295443ae4a7c5456f018f, type: 2}
+  id: 30
+  title: Suspicious Package
+  icon: {fileID: 21300000, guid: 3e3058d3dc4b4dd46a11f625559e2c95, type: 3}
+  ability: {fileID: 0}
+  removeAfterUse: 0

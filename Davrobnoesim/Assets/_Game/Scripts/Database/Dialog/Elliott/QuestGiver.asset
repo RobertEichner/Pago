@@ -17,7 +17,7 @@ MonoBehaviour:
 
 
     "You look like a skilled man. I need some hunting goods,
-    but I don''t want to ask Richy. He''s gonna take the whole week to do it. Here''s
-    a list"'
+    but I don''t want to ask Richy. He''s gonna take the whole week to do it. Could
+    you bring me a hide?"'
   nextStates: []
   quest: {fileID: 11400000, guid: a355375ef18ca2d4f80c883afd2ec9c3, type: 2}

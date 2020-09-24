@@ -130,7 +130,8 @@ MonoBehaviour:
   lookAhead: 1
   drop:
   - {fileID: 11400000, guid: 4bac209fedfa99d4fbd4c5fc78804f6c, type: 2}
-  state: 
+  - {fileID: 11400000, guid: dbf3ac210d8295443ae4a7c5456f018f, type: 2}
+  state: 0000000000000000
   layerToBlockDrop:
     serializedVersion: 2
     m_Bits: 8192

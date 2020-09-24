@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62bf2442bf3399f41a0929aed08fefab, type: 3}
+  m_Name: what
+  m_EditorClassIdentifier: 
+  isAnchor: 0
+  storyText: 'Carl:
+
+    "What, you''re about to leave? You can''t! *Sigh*... Look,
+    the people here need help. Your help! I want to make an offer. Make them happy
+    and I''ll make you honorary citizen of Willowdale. Sounds good, eh?"'
+  nextStates:
+  - {fileID: 11400000, guid: 0c07d5696d24fa646a4bd17d51644fb8, type: 2}
