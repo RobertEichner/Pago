@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d3a28bcd723cb545b9e4c437e93839f, type: 3}
-  m_Name: IrenaChest
+  m_Script: {fileID: 11500000, guid: 4fa0bd4d62c4be5409d6eeff3dcacf94, type: 3}
+  m_Name: Enchanted Pocket Watch
   m_EditorClassIdentifier: 
-  initialItemList:
-  - {fileID: 11400000, guid: bcdb3015762fa3b4f8fe99762ea1579b, type: 2}
-  - {fileID: 11400000, guid: ff1fb52f80a3ae6489e6db31e251c851, type: 2}
+  id: 34
+  title: Enchanted Pocket Watch
+  icon: {fileID: 21300000, guid: 6420572193e3703428eadb4a6d105365, type: 3}
+  ability: {fileID: 0}
+  removeAfterUse: 0
