@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 34
   title: Enchanted Pocket Watch
   icon: {fileID: 21300000, guid: 6420572193e3703428eadb4a6d105365, type: 3}
-  ability: {fileID: 0}
+  ability: {fileID: 11400000, guid: 1ab08065d65f6864490b79163665bdbf, type: 2}
   removeAfterUse: 0
