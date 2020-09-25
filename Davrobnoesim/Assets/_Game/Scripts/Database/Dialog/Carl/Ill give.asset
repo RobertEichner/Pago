@@ -18,4 +18,4 @@ MonoBehaviour:
     "I''ll give you everything you need to continue your journey.
     You have my word!"'
   nextStates:
-  - {fileID: 11400000, guid: 92d3cc094565d21439475f09ddcf9fee, type: 2}
+  - {fileID: 11400000, guid: 667d5cb3966c85040879415c7d0e08a8, type: 2}

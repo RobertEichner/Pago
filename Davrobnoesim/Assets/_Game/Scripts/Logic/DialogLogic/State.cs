@@ -20,5 +20,10 @@ public abstract class State : ScriptableObject
         return nextStates;
     }
 
+    public void ClearNextStates()
+    {
+        nextStates = null;
+    }
+
     public abstract void StoryEvent();
 }

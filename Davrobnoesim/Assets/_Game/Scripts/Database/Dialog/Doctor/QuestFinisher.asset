@@ -20,3 +20,4 @@ MonoBehaviour:
     it? Thank you."'
   nextStates: []
   quest: {fileID: 11400000, guid: a355375ef18ca2d4f80c883afd2ec9c3, type: 2}
+  itemToRemove: {fileID: 11400000, guid: 126aafcad942eaa4f9a215c75948ab43, type: 2}

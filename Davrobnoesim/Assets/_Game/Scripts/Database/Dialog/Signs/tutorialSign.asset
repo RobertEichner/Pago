@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: tutorialSign
   m_EditorClassIdentifier: 
   isAnchor: 0
-  storyText: 'Pago 10km
+  storyText: 'Willowdale 10km
 
     ->'
   nextStates: []

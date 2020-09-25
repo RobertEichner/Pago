@@ -20,9 +20,5 @@ public class RichySpezial : State
 
         richy.GetComponent<SpriteRenderer>().sprite = richySpriteBack;
         naiad.GetComponent<Animator>().SetTrigger(triggerNaiad);
-
-        Fading fad = GameObject.Find("Transition").GetComponent<Fading>();
-        fad.StartTrans(true);
-        
     }
 }

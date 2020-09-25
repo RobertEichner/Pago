@@ -60,26 +60,27 @@ public class ClockMaze : ItemAbility
         LinkedList<PathTile> maze = Maze.Path;
         int playerPos = Maze.PlayerPos;
 
-        if (playerPos > 0)
+
+        if (maze.Count > 0)
         {
             int nextPos = maze.ElementAt(playerPos).next;
 
             switch (nextPos)
             {
                 case 0:
-                    defaultText = "The clock shows 12 a clock";
+                    defaultText = "The clock shows 12 o'clock";
                     break;
                 case 1:
-                    defaultText = "The clock shows 3 a clock";
+                    defaultText = "The clock shows 3 o'clock";
                     break;
                 case 2:
-                    defaultText = "The clock shows 6 a clock";
+                    defaultText = "The clock shows 6 o'clock";
                     break;
                 case 3:
-                    defaultText = "The clock shows 9 a clock";
+                    defaultText = "The clock shows 9 o'clock";
                     break;
                 default:
-                    defaultText = "The clock seems to be broken";
+                    defaultText = "The clock seems to be spinning";
                     break;
             }
         }

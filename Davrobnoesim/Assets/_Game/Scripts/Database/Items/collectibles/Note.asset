@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 31
   title: Note
   icon: {fileID: 21300000, guid: 10bd044ea5b81fa4eb4dbea566236f7f, type: 3}
-  ability: {fileID: 0}
+  ability: {fileID: 11400000, guid: b8b086dff21d0db4ba18af7c7624226d, type: 2}
   removeAfterUse: 0

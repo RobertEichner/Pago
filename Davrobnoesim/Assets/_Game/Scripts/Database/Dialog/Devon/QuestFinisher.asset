@@ -18,3 +18,4 @@ MonoBehaviour:
     you brought it back!\""
   nextStates: []
   quest: {fileID: 11400000, guid: 7e529d6581bef78478fdb92f6289fbbc, type: 2}
+  itemToRemove: {fileID: 11400000, guid: b7a7b65f443bce14fbe4fa2b4d1bde64, type: 2}

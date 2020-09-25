@@ -11,7 +11,7 @@ public class ColliderSceneLoader : MonoBehaviour
     private static int levelToLoad;
     private static float posX, posY;
 
-    public Animator animator;
+    //public Animator animator;
     
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -22,7 +22,9 @@ public class ColliderSceneLoader : MonoBehaviour
             posX = x;
             posY = y;
             
-            animator.SetTrigger("fadeOut");
+            //animator.SetTrigger("fadeOut");
+            Fading fad = GameObject.Find("Transition").GetComponent<Fading>();
+            fad.StartTrans(posX , posY, other.gameObject, 4, null);
         }
     }
 

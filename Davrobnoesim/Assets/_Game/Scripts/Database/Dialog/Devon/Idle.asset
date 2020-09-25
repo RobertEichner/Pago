@@ -18,4 +18,4 @@ MonoBehaviour:
     from the health departement...\""
   nextStates:
   - {fileID: 11400000, guid: 6eaba6c3603725541bc524964e8ba162, type: 2}
-  - {fileID: 11400000, guid: 6c593030a36973a4b9c4315ca0d4c126, type: 2}
+  - {fileID: 11400000, guid: c7944261d36db384fb8df51e883e0292, type: 2}

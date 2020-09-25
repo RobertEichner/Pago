@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Dialog
   m_EditorClassIdentifier: 
   activeInThisRadius: 4
-  startState: {fileID: 11400000, guid: 3eaff6f8ab974074ba1a33ba52b54e5d, type: 2}
+  startState: {fileID: 11400000, guid: b6341f502142c734a950ca3b488b058a, type: 2}
   cellSizeX: 1200
   cellSizeY: 200

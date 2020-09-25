@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c051ad558a8887e45a2e913d90e3aa81, type: 3}
-  m_Name: test
+  m_Name: CavesStoneSaves
   m_EditorClassIdentifier: 
-  initialStartState: {fileID: 11400000, guid: b9a0d60e4b4dd414dbdc776b27ea902f, type: 2}
+  initialStartState: {fileID: 11400000, guid: 02fb25ae0231a784abe2b0f92aeeb18d, type: 2}

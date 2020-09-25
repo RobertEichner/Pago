@@ -11,6 +11,7 @@
         <e p="_Game" t="Include">
           <e p="Scripts" t="Include">
             <e p="AnimatedTile.cs" t="Include" />
+            <e p="AudioLoopStart.cs" t="Include" />
             <e p="DayNightCycle" t="Include">
               <e p="Clock.cs" t="Include" />
             </e>
@@ -25,6 +26,7 @@
             <e p="Logic" t="Include">
               <e p="BridgeLogic.cs" t="Include" />
               <e p="DialogLogic" t="Include">
+                <e p="CarlDialogFIrst.cs" t="Include" />
                 <e p="DialogLoadScene.cs" t="Include" />
                 <e p="DialogSave.cs" t="Include" />
                 <e p="DialogToFinish.cs" t="Include" />

@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 3073277495280284965}
   - component: {fileID: 3073277495280284966}
   - component: {fileID: 3073277495280284967}
-  m_Layer: 0
+  - component: {fileID: 1757723632}
+  - component: {fileID: 1757723631}
+  m_Layer: 11
   m_Name: bandit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3073277495280284984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.6, y: 22.2, z: -17.500008}
+  m_LocalPosition: {x: -52.24, y: 17.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -90,7 +92,8 @@ SpriteRenderer:
   m_SortingLayerID: -1382740013
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -2011081452543692480, guid: 1e23fad5287754e40ad23c0ca265665c,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,6 +101,54 @@ SpriteRenderer:
   m_Size: {x: 2, y: 1.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &1757723632
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3073277495280284984}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.013521552, y: -0.33127546}
+  m_Size: {x: 0.35038114, y: 0.79658985}
+  m_Direction: 0
+--- !u!114 &1757723631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3073277495280284984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dc925fc9b2d678469531e911263150a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  speed: 3
+  attentionRange: 4
+  attackCooldown: 2
+  attackRange: 1
+  attackDamage: 100
+  layerMaskToHit:
+    serializedVersion: 2
+    m_Bits: 1024
+  avoidDistance: 0.5
+  lookAhead: 1
+  drop:
+  - {fileID: 11400000, guid: c4428c5d4e90fba489e74c2187811edf, type: 2}
+  state: 00000000
+  layerToBlockDrop:
+    serializedVersion: 2
+    m_Bits: 8192
+  partSys:
+  - {fileID: 7160452990971518200, guid: 8538aa4604befd44190889a07339ddff, type: 3}
+  - {fileID: 2148381519164243429, guid: 932b2d8d3226f174cbcd01f9d07cd0dd, type: 3}

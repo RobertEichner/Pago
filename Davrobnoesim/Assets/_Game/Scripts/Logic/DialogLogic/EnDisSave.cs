@@ -20,6 +20,7 @@ public class EnDisSave : ScriptableObject
 
     private void OnEnable()
     {
+        //hideFlags = HideFlags.DontUnloadUnusedAsset;
         state = IntState.INITIAL;
     }
 }

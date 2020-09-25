@@ -9227,7 +9227,7 @@ PrefabInstance:
     - target: {fileID: 3073277495280284965, guid: a431cafea7285d3478656cc5ae068fc4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -17.500008
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3073277495280284965, guid: a431cafea7285d3478656cc5ae068fc4,
         type: 3}
@@ -9273,16 +9273,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bandit
-      objectReference: {fileID: 0}
-    - target: {fileID: 3073277495280284984, guid: a431cafea7285d3478656cc5ae068fc4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 3073277495280284984, guid: a431cafea7285d3478656cc5ae068fc4,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a431cafea7285d3478656cc5ae068fc4, type: 3}
@@ -9616,41 +9606,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abe1bcfaaeb9c0b4db61df31d57fc4c5, type: 3}
---- !u!1 &1757723630 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3073277495280284984, guid: a431cafea7285d3478656cc5ae068fc4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1312819709}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1757723631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757723630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dc925fc9b2d678469531e911263150a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  speed: 3
-  attentionRange: 4
-  attackCooldown: 2
-  attackRange: 1
-  attackDamage: 100
-  layerMaskToHit:
-    serializedVersion: 2
-    m_Bits: 1024
-  avoidDistance: 0.5
-  lookAhead: 1
-  drop: []
-  state: 
-  layerToBlockDrop:
-    serializedVersion: 2
-    m_Bits: 8192
-  partSys: []
 --- !u!1001 &1765837285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9899,7 +9854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeInThisRadius: 4
-  startState: {fileID: 11400000, guid: 3eaff6f8ab974074ba1a33ba52b54e5d, type: 2}
+  startState: {fileID: 0}
   cellSizeX: 1200
   cellSizeY: 200
 --- !u!1001 &4460622554093688248

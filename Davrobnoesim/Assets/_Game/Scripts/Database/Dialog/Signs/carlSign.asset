@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: carlSign
   m_EditorClassIdentifier: 
   isAnchor: 0
-  storyText: 'Major of Pago Town
+  storyText: 'Major of Willowdale
 
     Sir Carl IV'
   nextStates: []

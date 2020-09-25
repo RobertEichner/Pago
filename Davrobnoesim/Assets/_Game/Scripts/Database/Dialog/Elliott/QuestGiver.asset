@@ -20,4 +20,4 @@ MonoBehaviour:
     but I don''t want to ask Richy. He''s gonna take the whole week to do it. Could
     you bring me a hide?"'
   nextStates: []
-  quest: {fileID: 11400000, guid: a355375ef18ca2d4f80c883afd2ec9c3, type: 2}
+  quest: {fileID: 11400000, guid: a9bbf2ef51ca17f4b99321611fbd8e08, type: 2}

@@ -13,6 +13,7 @@ public abstract class DialogToFinish : State
 
     private void OnEnable()
     {
+        //hideFlags = HideFlags.DontUnloadUnusedAsset;
         isDone = false;
     }
 }

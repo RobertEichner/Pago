@@ -9,9 +9,12 @@ public class KisteSave : ScriptableObject
     [SerializeField] private Item[] initialItemList = null;
     
     public Item[] ItemList { get; set; } = null;
+    
 
     private void OnEnable()
     {
+        //hideFlags = HideFlags.DontUnloadUnusedAsset;
         ItemList = initialItemList;
+          
     }
 }

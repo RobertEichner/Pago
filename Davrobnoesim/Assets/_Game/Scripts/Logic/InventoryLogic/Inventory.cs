@@ -93,6 +93,19 @@ public class Inventory : MonoBehaviour
             ItemChange(null, index);
         }
     }
+    
+    public void RemoveItem(Item item)
+    {
+        for (int i = 0; i < maxItemSlots; i++)
+        {
+            if (GetItemFromIndex(i) == item)
+            {
+                RemoveItem(i);
+                ItemChange(null, i);
+                return;
+            }
+        }
+    }
 
     public void Clear()
     {

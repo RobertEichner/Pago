@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6da311bbeef3bea418b5159dacd36abc, type: 3}
-  m_Name: testQuest
+  m_Script: {fileID: 11500000, guid: c051ad558a8887e45a2e913d90e3aa81, type: 3}
+  m_Name: NoteIrenaSave
   m_EditorClassIdentifier: 
-  name: 
-  description: 
-  task: {fileID: 11400000, guid: e10477800860bb94eb74dfb75ce17308, type: 2}
+  initialStartState: {fileID: 11400000, guid: 274ee90b2d4301042b233057f5078038, type: 2}

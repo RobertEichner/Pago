@@ -63,7 +63,7 @@ public class Maze : MonoBehaviour
         Debug.Log(path.ElementAt(3).next);
         Debug.Log(path.ElementAt(4).next);
     }
-    public void OnTriggerEnter2D()
+    public void OnTriggerEnter2D(Collider2D collider2D)
     {
         GameObject player = GameObject.FindWithTag("Player");
 
@@ -78,7 +78,9 @@ public class Maze : MonoBehaviour
             playerPos++;
         }
         else if (pathTaken != -1)
+        {
             SceneManager.activeSceneChanged += SceneChanged; //exit
+        }
 
         if (playerPos == pathLength) {
             SceneManager.activeSceneChanged += SceneChanged; //teleport
@@ -94,12 +96,18 @@ public class Maze : MonoBehaviour
             player.transform.position = new Vector2(0, 13.5f);
         else
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(3);
             player.transform.position = new Vector2(1, 30);
         }
 
 
         SceneManager.activeSceneChanged -= SceneChanged;
+    }
+
+    private void TeleportPlayer()
+    {
+        Fading fad = GameObject.Find("Transition").GetComponent<Fading>();
+        //fad.StartTrans(posX , posY, other.gameObject, 4, null);
     }
 }
 

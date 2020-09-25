@@ -25,6 +25,7 @@ public class Quest: ScriptableObject
     }
     private void OnEnable()
     {
+        //hideFlags = HideFlags.DontUnloadUnusedAsset;
         isDone = false;
     }
 }

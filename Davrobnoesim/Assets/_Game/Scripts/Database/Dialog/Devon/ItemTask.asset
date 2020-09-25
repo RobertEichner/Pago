@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28aa3814f9772714d9a8501768a54a31, type: 3}
   m_Name: ItemTask
   m_EditorClassIdentifier: 
-  itemToCheck: {fileID: 11400000, guid: 0b85b5de2f554a849af5b0e00d66af4d, type: 2}
+  itemToCheck: {fileID: 11400000, guid: b7a7b65f443bce14fbe4fa2b4d1bde64, type: 2}

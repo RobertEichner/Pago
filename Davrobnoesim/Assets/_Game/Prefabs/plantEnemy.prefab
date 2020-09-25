@@ -4870,8 +4870,12 @@ MonoBehaviour:
   attentionRange: 4
   attackCooldown: 5
   attackDamage: 10
+  layerToBlockDrop:
+    serializedVersion: 2
+    m_Bits: 8192
+  drop:
+  - {fileID: 11400000, guid: 0b85b5de2f554a849af5b0e00d66af4d, type: 2}
+  state: 00000000
   partSys:
   - {fileID: 8259126638563324121, guid: 728d15ac58313f34b8c157694fcb9a57, type: 3}
   - {fileID: 2148381519164243429, guid: 932b2d8d3226f174cbcd01f9d07cd0dd, type: 3}
-  drop: []
-  state: 

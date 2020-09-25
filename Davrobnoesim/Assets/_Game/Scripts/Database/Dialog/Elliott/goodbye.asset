@@ -15,4 +15,4 @@ MonoBehaviour:
   isAnchor: 0
   storyText: '[Goodbye]'
   nextStates:
-  - {fileID: 11400000, guid: cd9abf86004b44740a4ca93314b1f20e, type: 2}
+  - {fileID: 11400000, guid: b69e55053dfe86c4d86f334a54c77e94, type: 2}
