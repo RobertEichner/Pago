@@ -93,8 +93,11 @@ public class Maze : MonoBehaviour
         if (playerPos == pathLength)
             player.transform.position = new Vector2(0, 13.5f);
         else
-            player.transform.position = new Vector2(0, -25f);
-           
+        {
+            SceneManager.LoadScene(0);
+            player.transform.position = new Vector2(1, 30);
+        }
+
 
         SceneManager.activeSceneChanged -= SceneChanged;
     }
