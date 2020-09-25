@@ -69,6 +69,7 @@
               <e p="ItemLogic" t="Include">
                 <e p="AbillitiesScripts" t="Include">
                   <e p="AddGold.cs" t="Include" />
+                  <e p="ClockMaze.cs" t="Include" />
                   <e p="DealDamageSword.cs" t="Include" />
                   <e p="HealHealth.cs" t="Include" />
                   <e p="ItemAbility.cs" t="Include" />

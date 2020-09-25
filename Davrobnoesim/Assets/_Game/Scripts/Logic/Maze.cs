@@ -15,6 +15,10 @@ public class Maze : MonoBehaviour
 
     System.Random rdm = new System.Random(System.DateTime.Now.Millisecond);
 
+    public static LinkedList<PathTile> Path => path;
+
+    public static int PlayerPos => playerPos;
+
     public void genPath()
     {
         path.Clear();

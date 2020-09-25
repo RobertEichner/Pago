@@ -42,10 +42,14 @@ public class EnemyCollAvoid : MonoBehaviour, IDamagable
     {
         var direction =  target.position - transform.position;
         float dist = direction.magnitude;
-        
-        
-        if(dist > attentionRange)
+
+
+        if (dist > attentionRange)
+        {
+            anim.SetFloat("speed", 0);
             return;
+        }
+        
 
         //LookAtTarget(direction);
         
@@ -105,7 +109,7 @@ public class EnemyCollAvoid : MonoBehaviour, IDamagable
         if(hit.collider.TryGetComponent<IDamagable>(out var tar) && hit.collider != col)
             tar.DealDamage(attackDamage);
         
-        //anim.SetTrigger("attack");
+        anim.SetTrigger("attack");
         canAttack = false;
         StartCoroutine(WaitForAttack());
 
