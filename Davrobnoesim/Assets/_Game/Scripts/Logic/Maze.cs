@@ -90,6 +90,7 @@ public class Maze : MonoBehaviour
             player.transform.position = new Vector2(0, 13.5f);
         else
             player.transform.position = new Vector2(0, -25f);
+           
 
         SceneManager.activeSceneChanged -= SceneChanged;
     }
