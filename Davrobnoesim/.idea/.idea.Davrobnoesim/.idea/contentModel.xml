@@ -82,6 +82,7 @@
                 <e p="UIItem.cs" t="Include" />
               </e>
               <e p="Maze.cs" t="Include" />
+              <e p="MeetIrena.cs" t="Include" />
               <e p="PlayerLogic" t="Include">
                 <e p="PlayerActions.cs" t="Include" />
                 <e p="PlayerMovement.cs" t="Include" />
@@ -93,6 +94,7 @@
                 <e p="QuestTasksScripts" t="Include">
                   <e p="EnemyTask.cs" t="Include" />
                   <e p="EnemyType.cs" t="Include" />
+                  <e p="EnterTask.cs" t="Include" />
                   <e p="ItemCheckTask.cs" t="Include" />
                   <e p="OnDestroyEvent.cs" t="Include" />
                   <e p="QuestTask.cs" t="Include" />
