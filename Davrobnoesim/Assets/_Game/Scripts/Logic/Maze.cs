@@ -12,6 +12,8 @@ public class Maze : MonoBehaviour
     private static int playerPos = 0;
     private static int pathLength;
     [SerializeField] int pathTaken = -1;
+    
+    [SerializeField] private float x, y;
 
     System.Random rdm = new System.Random(System.DateTime.Now.Millisecond);
 
@@ -79,12 +81,18 @@ public class Maze : MonoBehaviour
         }
         else if (pathTaken != -1)
         {
-            SceneManager.activeSceneChanged += SceneChanged; //exit
+            //SceneManager.activeSceneChanged += SceneChanged; //exit
+            TeleportPlayer(1, 30, player, 3 );
+            return;
         }
 
         if (playerPos == pathLength) {
-            SceneManager.activeSceneChanged += SceneChanged; //teleport
+            //SceneManager.activeSceneChanged += SceneChanged; //teleport
+            TeleportPlayer(0, 13.5f, player, 4 );
+            return;
         }
+        
+        TeleportPlayer(x, y, player, 4 );
 
     } 
 
@@ -97,17 +105,17 @@ public class Maze : MonoBehaviour
         else
         {
             SceneManager.LoadScene(3);
-            player.transform.position = new Vector2(1, 30);
+            player.transform.position = new Vector2(1, 29.5f);
         }
 
 
         SceneManager.activeSceneChanged -= SceneChanged;
     }
 
-    private void TeleportPlayer()
+    private void TeleportPlayer(float posX, float posY, GameObject player, int sceneIndex)
     {
         Fading fad = GameObject.Find("Transition").GetComponent<Fading>();
-        //fad.StartTrans(posX , posY, other.gameObject, 4, null);
+        fad.StartTrans(posX , posY, player, sceneIndex, null);
     }
 }
 

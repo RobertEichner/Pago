@@ -212,7 +212,6 @@ GameObject:
   m_Component:
   - component: {fileID: 75106442}
   - component: {fileID: 75106444}
-  - component: {fileID: 75106443}
   - component: {fileID: 75106445}
   m_Layer: 0
   m_Name: West
@@ -235,21 +234,6 @@ Transform:
   m_Father: {fileID: 1791765185}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &75106443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75106441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01ef80765c4dda04583d8eea30289673, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scene: 4
-  x: 3.5
-  y: -1
 --- !u!61 &75106444
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -289,6 +273,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathTaken: 3
+  x: 3.5
+  y: -1
 --- !u!4 &93544912 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4979869808376703025, guid: 0d873c2a9ec513e41a266269c2deabbf,
@@ -927,6 +913,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathTaken: 0
+  x: 0
+  y: 0
 --- !u!114 &483084897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32077,7 +32065,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1573399485}
   - component: {fileID: 1573399487}
-  - component: {fileID: 1573399486}
   - component: {fileID: 1573399488}
   m_Layer: 0
   m_Name: East
@@ -32100,21 +32087,6 @@ Transform:
   m_Father: {fileID: 1791765185}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1573399486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1573399484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01ef80765c4dda04583d8eea30289673, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scene: 4
-  x: -3.5
-  y: -1
 --- !u!61 &1573399487
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32154,6 +32126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathTaken: 1
+  x: -3.5
+  y: -1
 --- !u!4 &1615530551 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4979869808376703025, guid: 0d873c2a9ec513e41a266269c2deabbf,
@@ -32851,7 +32825,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1836246930}
   - component: {fileID: 1836246929}
-  - component: {fileID: 1836246928}
   - component: {fileID: 1836246931}
   m_Layer: 0
   m_Name: North
@@ -32860,21 +32833,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1836246928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836246927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01ef80765c4dda04583d8eea30289673, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scene: 4
-  x: 0
-  y: -3
 --- !u!61 &1836246929
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32928,6 +32886,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathTaken: 0
+  x: 0
+  y: -3
 --- !u!4 &1841016366 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4979869808376703025, guid: 0d873c2a9ec513e41a266269c2deabbf,
@@ -52039,7 +51999,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1925090796}
-  - component: {fileID: 1925090797}
   - component: {fileID: 1925090798}
   - component: {fileID: 1925090799}
   m_Layer: 0
@@ -52063,21 +52022,6 @@ Transform:
   m_Father: {fileID: 1791765185}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1925090797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1925090795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01ef80765c4dda04583d8eea30289673, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scene: 4
-  x: 0
-  y: 3
 --- !u!61 &1925090798
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52117,6 +52061,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathTaken: 2
+  x: 0
+  y: 3
 --- !u!4 &1961062954 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4979869808376703025, guid: 0d873c2a9ec513e41a266269c2deabbf,

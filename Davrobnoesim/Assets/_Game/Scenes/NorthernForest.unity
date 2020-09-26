@@ -5321,7 +5321,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: -7308169632179697715, guid: 96da122b8b17a4e4681d8eac42e46f4d, type: 3}
       - {fileID: 7322846707716811392, guid: 96da122b8b17a4e4681d8eac42e46f4d, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 53, y: 21, z: 0}
@@ -5337,7 +5337,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: -7308169632179697715, guid: 96da122b8b17a4e4681d8eac42e46f4d, type: 3}
       - {fileID: 7322846707716811392, guid: 96da122b8b17a4e4681d8eac42e46f4d, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 52, y: 22, z: 0}
@@ -109423,7 +109423,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038762536}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 30.5, z: 0}
+  m_LocalPosition: {x: 1, y: 30.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 20134867}
@@ -109442,6 +109442,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathTaken: -1
+  x: 0
+  y: 0
 --- !u!4 &2040521019 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4979869808376703025, guid: 0d873c2a9ec513e41a266269c2deabbf,
