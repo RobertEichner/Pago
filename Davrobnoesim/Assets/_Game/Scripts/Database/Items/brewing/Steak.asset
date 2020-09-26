@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 23
   title: Steak
   icon: {fileID: 21300000, guid: 59e577ff524ee9b458ef3f828d239d34, type: 3}
-  ability: {fileID: 11400000, guid: 779a63a795afe654d955af83281e851c, type: 2}
+  ability: {fileID: 11400000, guid: b086e229f104cc84f9d8284520efe2ca, type: 2}
   removeAfterUse: 1

@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 25
   title: Cooked Innards
   icon: {fileID: 21300000, guid: 265e2100e4977104eb8f7e011b915f2b, type: 3}
-  ability: {fileID: 11400000, guid: 779a63a795afe654d955af83281e851c, type: 2}
+  ability: {fileID: 11400000, guid: 4027beb528791094290768804c0574a7, type: 2}
   removeAfterUse: 1

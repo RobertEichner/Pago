@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 24
   title: Innards
   icon: {fileID: 21300000, guid: d93a2b010f657e042a5d1388de0f8685, type: 3}
-  ability: {fileID: 11400000, guid: 779a63a795afe654d955af83281e851c, type: 2}
+  ability: {fileID: 11400000, guid: 7259f7c8e9eaf9d43bda6bf4fc57b81e, type: 2}
   removeAfterUse: 1

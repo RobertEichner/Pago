@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 22
   title: Meat
   icon: {fileID: 21300000, guid: b1969751cbba27c4785ae7386f4c7b7a, type: 3}
-  ability: {fileID: 11400000, guid: 779a63a795afe654d955af83281e851c, type: 2}
+  ability: {fileID: 11400000, guid: 4027beb528791094290768804c0574a7, type: 2}
   removeAfterUse: 1
