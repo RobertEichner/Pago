@@ -44,7 +44,7 @@ public class UIInventory : MonoBehaviour
         ownerInv.OnItemChanged -= HandleItemChanged;
     }
 
-    private void UpdateSlot(int slot, Item item)
+    public void UpdateSlot(int slot, Item item)
     {
         if (item != null)
         {

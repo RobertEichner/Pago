@@ -11,7 +11,7 @@ public abstract class DialogToFinish : State
     
     public abstract bool CanBeDone();
 
-    private void OnEnable()
+    private void Awake()
     {
         //hideFlags = HideFlags.DontUnloadUnusedAsset;
         isDone = false;

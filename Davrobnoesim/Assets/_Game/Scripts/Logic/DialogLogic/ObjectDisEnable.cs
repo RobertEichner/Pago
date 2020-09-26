@@ -17,6 +17,8 @@ public class ObjectDisEnable : State
     {
         man = GameObject.Find("EnableDisableManager").GetComponent<EnDisManager>();
         man.SwitchStates(true);
+        Fading fad = GameObject.Find("Transition").GetComponent<Fading>();
+        fad.StartTrans(false);
     }
 
 }

@@ -100,8 +100,9 @@ public class Inventory : MonoBehaviour
         {
             if (GetItemFromIndex(i) == item)
             {
-                RemoveItem(i);
+                itemsInInv[i] = null;
                 ItemChange(null, i);
+                uIInventory.UpdateSlot(i, null);
                 return;
             }
         }

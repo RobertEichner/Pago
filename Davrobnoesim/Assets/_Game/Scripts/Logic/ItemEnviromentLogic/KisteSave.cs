@@ -11,7 +11,7 @@ public class KisteSave : ScriptableObject
     public Item[] ItemList { get; set; } = null;
     
 
-    private void OnEnable()
+    private void Awake()
     {
         //hideFlags = HideFlags.DontUnloadUnusedAsset;
         ItemList = initialItemList;

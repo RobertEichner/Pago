@@ -5321,7 +5321,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: -7308169632179697715, guid: 96da122b8b17a4e4681d8eac42e46f4d, type: 3}
       - {fileID: 7322846707716811392, guid: 96da122b8b17a4e4681d8eac42e46f4d, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 53, y: 21, z: 0}
@@ -5369,7 +5369,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: -7308169632179697715, guid: 96da122b8b17a4e4681d8eac42e46f4d, type: 3}
       - {fileID: 7322846707716811392, guid: 96da122b8b17a4e4681d8eac42e46f4d, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 53, y: 23, z: 0}
@@ -54477,7 +54477,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1650928638
 Transform:
   m_ObjectHideFlags: 0
@@ -108484,6 +108484,16 @@ PrefabInstance:
       propertyPath: toDisable.Array.data[0]
       value: 
       objectReference: {fileID: 1008816154}
+    - target: {fileID: 4460622553328277733, guid: 798985c358f41ec4a9915acff9a46079,
+        type: 3}
+      propertyPath: toEnable
+      value: 
+      objectReference: {fileID: 1008816154}
+    - target: {fileID: 4460622553328277733, guid: 798985c358f41ec4a9915acff9a46079,
+        type: 3}
+      propertyPath: toDisable
+      value: 
+      objectReference: {fileID: 1650928637}
     - target: {fileID: 4460622553328277734, guid: 798985c358f41ec4a9915acff9a46079,
         type: 3}
       propertyPath: m_LocalPosition.x

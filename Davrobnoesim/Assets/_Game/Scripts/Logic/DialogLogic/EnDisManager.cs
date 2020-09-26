@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class EnDisManager : MonoBehaviour
 {
-    [SerializeField] private GameObject[] toEnable = null;
-    [SerializeField] private GameObject[] toDisable = null;
+    [SerializeField] private GameObject toEnable = null;
+    [SerializeField] private GameObject toDisable = null;
     [SerializeField] private EnDisSave save;
     
 
@@ -20,15 +20,18 @@ public class EnDisManager : MonoBehaviour
     
     public void SwitchStates(bool switchTo)
     {
-        foreach (var obj in toEnable)
+
+        if (switchTo)
         {
-            obj.SetActive(switchTo);
+            toDisable.transform.position = new Vector3(53.5f, 15, 0);
+            toEnable.transform.position = new Vector3(100, -100, 0);
         }
-        
-        foreach (var obj in toDisable)
+        else
         {
-            obj.SetActive(!switchTo);
+            toDisable.transform.position = new Vector3(100, -100, 0);
+            toEnable.transform.position = new Vector3(-6.5f, 5.5f, 0);
         }
+
 
         save.State = switchTo ? EnDisSave.IntState.CHANGED : EnDisSave.IntState.INITIAL;
     }

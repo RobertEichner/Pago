@@ -751,7 +751,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407711084}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -25, z: 0}
+  m_LocalPosition: {x: 0, y: 12.11, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1791765185}
@@ -766,10 +766,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 407711084}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01ef80765c4dda04583d8eea30289673, type: 3}
+  m_Script: {fileID: 11500000, guid: 57e2488cbc6805948bfa06aa1a7cdcf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 0
+  scene: 3
   x: 1
   y: 30
 --- !u!61 &407711087
@@ -948,7 +948,6 @@ GameObject:
   m_Component:
   - component: {fileID: 483084895}
   - component: {fileID: 483084898}
-  - component: {fileID: 483084897}
   - component: {fileID: 483084896}
   m_Layer: 0
   m_Name: Hut
@@ -980,25 +979,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 483084894}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac70ae7320461b74a80103f9452a3d83, type: 3}
+  m_Script: {fileID: 11500000, guid: 57e2488cbc6805948bfa06aa1a7cdcf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathTaken: 0
-  x: 0
-  y: 0
---- !u!114 &483084897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 483084894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01ef80765c4dda04583d8eea30289673, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scene: 3
+  scene: 5
   x: -17.5
   y: 22
 --- !u!61 &483084898
@@ -32938,7 +32922,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1836246927}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.66, z: 0}
+  m_LocalPosition: {x: 0, y: 3.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1791765185}

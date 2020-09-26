@@ -60,11 +60,10 @@ public class PlayerActions : MonoBehaviour
         isOpen = !isOpen;
         inventarToOpen.SetActive(isOpen);
         
-
-        if (isOpen && inventarToOpen.TryGetComponent<UIInventory>(out var toInv))
-        {
-            toInv.OwnerInv.UpdateAllSlots();
-        }
+        
+        inventarToOpen.TryGetComponent<UIInventory>(out var toInv);
+        toInv.OwnerInv.UpdateAllSlots();
+    
     }
 
     private bool IsOverUI()

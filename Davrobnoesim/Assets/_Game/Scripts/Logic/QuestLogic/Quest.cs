@@ -23,7 +23,7 @@ public class Quest: ScriptableObject
             return isDone;
         }
     }
-    private void OnEnable()
+    private void Awake()
     {
         //hideFlags = HideFlags.DontUnloadUnusedAsset;
         isDone = false;

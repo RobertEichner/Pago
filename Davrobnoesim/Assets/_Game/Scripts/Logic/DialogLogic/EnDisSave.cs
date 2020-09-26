@@ -18,7 +18,7 @@ public class EnDisSave : ScriptableObject
         set => state = value;
     }
 
-    private void OnEnable()
+    private void Awake()
     {
         //hideFlags = HideFlags.DontUnloadUnusedAsset;
         state = IntState.INITIAL;
