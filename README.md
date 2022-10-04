@@ -4,7 +4,7 @@
 
 created by
 
-Simon Metzger (Designer for Level, Art, Animationen, Sound and assisted with programming) 
+Simon Metzger (Designer for Level, Art, Animationen, Sound and assisted with programming) </br>
 Robert Eichner (Main Programemer)
 
 
